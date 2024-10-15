@@ -5,7 +5,9 @@ TrajectoryPublisherNode::TrajectoryPublisherNode(const ros::NodeHandle &nh, cons
 :nh_(nh), nh_private_(nh_private)  {
     
     odom_sub_ =
-        nh_.subscribe<nav_msgs::Odometry>("/airsim_node/drone_1/odom_local_ned",1, &TrajectoryPublisherNode::odomCallback,this);
+        nh_.subscribe<nav_msgs::Odometry>("/airsim_node/UnmannedAirplane_1/odom_local_ned",1, &TrajectoryPublisherNode::odomCallback,this);
+    yolo_sub_ = 
+        nh_.subscribe<yolov8_ros_msgs::BoundingBoxes>("/yolov8/BoundingBoxes",10, &TrajectoryPublisherNode::boundingBoxes,this);
     
 }
 
@@ -13,8 +15,50 @@ TrajectoryPublisherNode::TrajectoryPublisherNode(const ros::NodeHandle &nh, cons
 TrajectoryPublisherNode::~TrajectoryPublisherNode() {}
 
 
-
-
+void TrajectoryPublisherNode::boundingBoxes(const yolov8_ros_msgs::BoundingBoxesConstPtr &msg){
+    if (!msg) {
+        std::cerr << "BoundingBoxes message is null!" << std::endl;
+        return;
+    }
+    yolo_ = msg;
+    if(odom_pos_(2) <= -0.2 && stamp3 != yolo_->header.stamp){
+        stamp3 = yolo_->header.stamp;
+        Value data(Json::arrayValue);
+        std::string type_class;
+        for (const auto& box : yolo_->bounding_boxes) {
+            Value obj;
+            if(box.Class.empty())
+            type_class = "0";
+            if(box.Class == "class_1")
+                type_class = "1";
+            if(box.Class == "class_0")
+                type_class = "8";
+            obj["ObjType"] = type_class;
+            obj["ULPointX"] = static_cast<double>(box.xmin); // xmin
+            obj["ULPointY"] = static_cast<double>(box.ymin); // ymin
+            obj["DRPointX"] = static_cast<double>(box.xmax); // xmax
+            obj["DRPointY"] = static_cast<double>(box.ymax); // ymax                if(box.xmin)
+            {
+                std::cout << "obj contains: " << obj.toStyledString() << std::endl;
+            }
+            // 将边界框添加到数据数组中
+            data.append(obj);
+        }
+        Value root;
+        uint64_t ms = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+        root["timestamp"] = Json::Value(static_cast<Int64>(ms)); // 将uint64_t转换为Json::Value::UInt64类型 // 将时间戳转换为纳秒
+        root["resX"] = resX;
+        root["resY"] = resY;
+        root["cameraName"] = cameraName;
+        root["data"] = data;
+        // 使用jsoncpp的StreamWriter来格式化JSON
+        StreamWriterBuilder builder;
+        builder["indentation"] = "\t"; // 使用制表符缩进
+        const std::string json_str = Json::writeString(builder, root);
+        client.simUpdateLocalDetectTargetNumData(vehicle, json_str);
+        // std::this_thread::sleep_for(std::chrono::milliseconds(11));  
+    }
+}
 
 void TrajectoryPublisherNode::odomCallback(const nav_msgs::OdometryConstPtr &msg) {
     odom_ = msg;
@@ -30,10 +74,10 @@ void TrajectoryPublisherNode::odomCallback(const nav_msgs::OdometryConstPtr &msg
     odom_orient_.x() = msg->pose.pose.orientation.x;
     odom_orient_.y() = msg->pose.pose.orientation.y;
     odom_orient_.z() = msg->pose.pose.orientation.z;
-    if(odom_pos_(2) >= 0.2 && stamp1 != odom_->header.stamp){
+    if(odom_pos_(2) <= -0.2 && stamp1 != odom_->header.stamp){
         stamp1 = odom_->header.stamp;
         uint64_t ms = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();    
-        client.simUpdateLocalPositionData(vehicle, odom_->pose.pose.position.x, odom_->pose.pose.position.y, odom_->pose.pose.position.z, ms, 7);
+        client.simUpdateLocalPositionData(vehicle, odom_->pose.pose.position.x, odom_->pose.pose.position.y, odom_->pose.pose.position.z, ms, 8);
     }
 }
 

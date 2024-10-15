@@ -1,0 +1,10 @@
+prefix=/home/ros20/jingbian_ws/install
+exec_prefix=
+libdir=/home/ros20/jingbian_ws/install/lib
+includedir=/home/ros20/jingbian_ws/install/include
+
+Name: rpclib
+Description: rpclib is a msgpack-rpc library written using modern C++
+Version: 2.3.0
+Libs: -L${libdir} -l
+Cflags: -I${includedir} -std=c++14

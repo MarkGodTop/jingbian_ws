@@ -1,0 +1,8 @@
+prefix=/home/ros20/jingbian_ws/install
+
+Name: plan_and_control
+Description: Description of plan_and_control
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs nav_msgs roscpp rospy std_msgs uav_msgs visualization_msgs yolov8_ros_msgs
