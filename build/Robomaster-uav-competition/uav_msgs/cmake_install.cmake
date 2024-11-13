@@ -69,7 +69,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/home/ros20/miniconda3/bin/python3" -m compileall "/home/ros20/jingbian_ws/devel/lib/python3/dist-packages/uav_msgs")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/ros20/jingbian_ws/devel/lib/python3/dist-packages/uav_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

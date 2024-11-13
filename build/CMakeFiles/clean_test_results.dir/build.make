@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ros20/jingbian_ws/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/home/ros20/miniconda3/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/ros20/jingbian_ws/build/test_results
+	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/ros20/jingbian_ws/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make

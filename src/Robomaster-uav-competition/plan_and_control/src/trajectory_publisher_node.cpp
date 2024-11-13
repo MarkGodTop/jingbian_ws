@@ -8,6 +8,8 @@ TrajectoryPublisherNode::TrajectoryPublisherNode(const ros::NodeHandle &nh, cons
         nh_.subscribe<nav_msgs::Odometry>("/airsim_node/UnmannedAirplane_1/odom_local_ned",1, &TrajectoryPublisherNode::odomCallback,this);
     yolo_sub_ = 
         nh_.subscribe<yolov8_ros_msgs::BoundingBoxes>("/yolov8/BoundingBoxes",10, &TrajectoryPublisherNode::boundingBoxes,this);
+    gps_sub_ =
+        nh_.subscribe<sensor_msgs::NavSatFix>("/airsim_node/UnmannedAirplane_1/gps/gps",1, &TrajectoryPublisherNode::gpsCallback,this);
     
 }
 
@@ -80,7 +82,16 @@ void TrajectoryPublisherNode::odomCallback(const nav_msgs::OdometryConstPtr &msg
         client.simUpdateLocalPositionData(vehicle, odom_->pose.pose.position.x, odom_->pose.pose.position.y, odom_->pose.pose.position.z, ms, 8);
     }
 }
-
+void TrajectoryPublisherNode::gpsCallback(const sensor_msgs::NavSatFixConstPtr &msg){
+    gps_flag_data = msg->latitude;
+    if(msg->latitude - gps_flag_data > 0.5){
+        gps_flag = true;
+        client.simUpdateLocalCheckNaviData(vehicle, gps_flag, "Point_1_1");
+    }else{
+        gps_flag = false;
+        client.simUpdateLocalCheckNaviData(vehicle, gps_flag, "Point_1_1");
+    }
+}
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "trajectory_publisher_node");

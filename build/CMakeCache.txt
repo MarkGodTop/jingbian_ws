@@ -21,7 +21,7 @@ AirLib_BINARY_DIR:STATIC=/home/ros20/jingbian_ws/build/Robomaster-uav-competitio
 AirLib_LIB_DEPENDS:STATIC=general;-lpthread;general;rpc;general;MavLinkCom;
 
 //Value Computed by CMake
-AirLib_SOURCE_DIR:STATIC=/home/ros20/AirSim/cmake/AirLib
+AirLib_SOURCE_DIR:STATIC=/mnt/d/AirSim/cmake/AirLib
 
 //Builds the googlemock subproject
 BUILD_GMOCK:BOOL=ON
@@ -313,16 +313,43 @@ DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 EMPY_EXECUTABLE:FILEPATH=EMPY_EXECUTABLE-NOTFOUND
 
 //Empy script
-EMPY_SCRIPT:STRING=/home/ros20/miniconda3/lib/python3.12/site-packages/em.py
+EMPY_SCRIPT:STRING=/usr/lib/python3/dist-packages/em.py
 
 //The directory containing a CMake configuration file for Eigen3.
 Eigen3_DIR:PATH=/usr/lib/cmake/eigen3
 
+//Path to a library.
+GMOCK_LIBRARY:FILEPATH=GMOCK_LIBRARY-NOTFOUND
+
+//Path to a library.
+GMOCK_LIBRARY_DEBUG:FILEPATH=GMOCK_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+GMOCK_MAIN_LIBRARY:FILEPATH=GMOCK_MAIN_LIBRARY-NOTFOUND
+
+//Path to a library.
+GMOCK_MAIN_LIBRARY_DEBUG:FILEPATH=GMOCK_MAIN_LIBRARY_DEBUG-NOTFOUND
+
 //The directory containing a CMake configuration file for GMock.
 GMock_DIR:PATH=GMock_DIR-NOTFOUND
 
+//Path to a file.
+GTEST_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+GTEST_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libgtest.a
+
+//Path to a library.
+GTEST_LIBRARY_DEBUG:FILEPATH=GTEST_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+GTEST_MAIN_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libgtest_main.a
+
+//Path to a library.
+GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
+
 //The directory containing a CMake configuration file for GTest.
-GTest_DIR:PATH=/home/ros20/miniconda3/lib/cmake/GTest
+GTest_DIR:PATH=GTest_DIR-NOTFOUND
 
 //Enable installation of googletest. (Projects embedding googletest
 // may want to turn this OFF.)
@@ -341,13 +368,13 @@ MavLinkCom_BINARY_DIR:STATIC=/home/ros20/jingbian_ws/build/Robomaster-uav-compet
 MavLinkCom_LIB_DEPENDS:STATIC=general;-lpthread;
 
 //Value Computed by CMake
-MavLinkCom_SOURCE_DIR:STATIC=/home/ros20/AirSim/cmake/MavLinkCom
+MavLinkCom_SOURCE_DIR:STATIC=/mnt/d/AirSim/cmake/MavLinkCom
 
 //Value Computed by CMake
 MavLinkTest_BINARY_DIR:STATIC=/home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest
 
 //Value Computed by CMake
-MavLinkTest_SOURCE_DIR:STATIC=/home/ros20/AirSim/cmake/MavLinkCom/MavLinkTest
+MavLinkTest_SOURCE_DIR:STATIC=/mnt/d/AirSim/cmake/MavLinkCom/MavLinkTest
 
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests3
@@ -356,13 +383,13 @@ NOSETESTS:FILEPATH=/usr/bin/nosetests3
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=/home/ros20/miniconda3/bin/python3
+PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3
 
 //Specify specific Python version to use ('major.minor' or 'major')
 PYTHON_VERSION:STRING=3
 
 //Location of Python module em
-PY_EM:STRING=/home/ros20/miniconda3/lib/python3.12/site-packages/em.py
+PY_EM:STRING=/usr/lib/python3/dist-packages/em.py
 
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=/home/ros20/jingbian_ws/build
@@ -567,13 +594,13 @@ rostime_DIR:PATH=/opt/ros/noetic/share/rostime/cmake
 rpc_BINARY_DIR:STATIC=/home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib
 
 //Value Computed by CMake
-rpc_SOURCE_DIR:STATIC=/home/ros20/AirSim/external/rpclib/rpclib-2.3.0
+rpc_SOURCE_DIR:STATIC=/mnt/d/AirSim/external/rpclib/rpclib-2.3.0
 
 //Value Computed by CMake
 rpclib_wrapper_BINARY_DIR:STATIC=/home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/rpclib_wrapper
 
 //Value Computed by CMake
-rpclib_wrapper_SOURCE_DIR:STATIC=/home/ros20/AirSim/cmake/rpclib_wrapper
+rpclib_wrapper_SOURCE_DIR:STATIC=/mnt/d/AirSim/cmake/rpclib_wrapper
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/noetic/share/sensor_msgs/cmake
@@ -621,7 +648,7 @@ visualization_msgs_DIR:PATH=/opt/ros/noetic/share/visualization_msgs/cmake
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
 
 //The directory containing a CMake configuration file for yaml-cpp.
-yaml-cpp_DIR:PATH=/home/ros20/miniconda3/lib/cmake/yaml-cpp
+yaml-cpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp
 
 //Value Computed by CMake
 yolov8_ros_BINARY_DIR:STATIC=/home/ros20/jingbian_ws/build/Robomaster-uav-competition/Yolov8_ros/yolov8_ros
@@ -832,11 +859,11 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.2.0()]
 //Details about finding PY_em
-FIND_PACKAGE_MESSAGE_DETAILS_PY_em:INTERNAL=[/home/ros20/miniconda3/lib/python3.12/site-packages/em.py][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_PY_em:INTERNAL=[/usr/lib/python3/dist-packages/em.py][v()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/home/ros20/miniconda3/bin/python3][v3.12.2()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.8.10()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 GMOCK_FROM_SOURCE_FOUND:INTERNAL=TRUE
@@ -844,11 +871,29 @@ GMOCK_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/src/googletest/googlemock/include
 GMOCK_FROM_SOURCE_LIBRARIES:INTERNAL=gmock
 GMOCK_FROM_SOURCE_LIBRARY_DIRS:INTERNAL=/home/ros20/jingbian_ws/build/gmock
 GMOCK_FROM_SOURCE_MAIN_LIBRARIES:INTERNAL=gmock_main
+//ADVANCED property for variable: GMOCK_LIBRARY
+GMOCK_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GMOCK_LIBRARY_DEBUG
+GMOCK_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GMOCK_MAIN_LIBRARY
+GMOCK_MAIN_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GMOCK_MAIN_LIBRARY_DEBUG
+GMOCK_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 GTEST_FROM_SOURCE_FOUND:INTERNAL=TRUE
 GTEST_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/include
 GTEST_FROM_SOURCE_LIBRARIES:INTERNAL=gtest
 GTEST_FROM_SOURCE_LIBRARY_DIRS:INTERNAL=/home/ros20/jingbian_ws/build/gtest
 GTEST_FROM_SOURCE_MAIN_LIBRARIES:INTERNAL=gtest_main
+//ADVANCED property for variable: GTEST_INCLUDE_DIR
+GTEST_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GTEST_LIBRARY
+GTEST_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GTEST_LIBRARY_DEBUG
+GTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GTEST_MAIN_LIBRARY
+GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GTEST_MAIN_LIBRARY_DEBUG
+GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 JSONCPP_CFLAGS:INTERNAL=-I/usr/include/jsoncpp
 JSONCPP_CFLAGS_I:INTERNAL=
 JSONCPP_CFLAGS_OTHER:INTERNAL=

@@ -1,4 +1,4 @@
-# Install script for directory: /home/ros20/AirSim/cmake/MavLinkCom/MavLinkTest
+# Install script for directory: /mnt/d/AirSim/cmake/MavLinkCom/MavLinkTest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

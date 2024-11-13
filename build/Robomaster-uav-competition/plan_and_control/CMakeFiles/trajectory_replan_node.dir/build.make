@@ -185,6 +185,7 @@ trajectory_replan_node_EXTERNAL_OBJECTS =
 /home/ros20/jingbian_ws/devel/lib/plan_and_control/trajectory_replan_node: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0
 /home/ros20/jingbian_ws/devel/lib/plan_and_control/trajectory_replan_node: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0
 /home/ros20/jingbian_ws/devel/lib/plan_and_control/trajectory_replan_node: /home/ros20/jingbian_ws/devel/lib/libtrajectory_generator.so
+/home/ros20/jingbian_ws/devel/lib/plan_and_control/trajectory_replan_node: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
 /home/ros20/jingbian_ws/devel/lib/plan_and_control/trajectory_replan_node: /home/ros20/jingbian_ws/devel/lib/libAirLib.a
 /home/ros20/jingbian_ws/devel/lib/plan_and_control/trajectory_replan_node: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.2.0
 /home/ros20/jingbian_ws/devel/lib/plan_and_control/trajectory_replan_node: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.2.0

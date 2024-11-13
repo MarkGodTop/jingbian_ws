@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ros20/jingbian_ws/build
 include Robomaster-uav-competition/uav_msgs/CMakeFiles/_uav_msgs_generate_messages_check_deps_DesiredStates.dir/progress.make
 
 Robomaster-uav-competition/uav_msgs/CMakeFiles/_uav_msgs_generate_messages_check_deps_DesiredStates:
-	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/uav_msgs && ../../catkin_generated/env_cached.sh /home/ros20/miniconda3/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py uav_msgs /home/ros20/jingbian_ws/src/Robomaster-uav-competition/uav_msgs/msg/DesiredStates.msg std_msgs/Header:geometry_msgs/Vector3
+	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/uav_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py uav_msgs /home/ros20/jingbian_ws/src/Robomaster-uav-competition/uav_msgs/msg/DesiredStates.msg geometry_msgs/Vector3:std_msgs/Header
 
 _uav_msgs_generate_messages_check_deps_DesiredStates: Robomaster-uav-competition/uav_msgs/CMakeFiles/_uav_msgs_generate_messages_check_deps_DesiredStates
 _uav_msgs_generate_messages_check_deps_DesiredStates: Robomaster-uav-competition/uav_msgs/CMakeFiles/_uav_msgs_generate_messages_check_deps_DesiredStates.dir/build.make

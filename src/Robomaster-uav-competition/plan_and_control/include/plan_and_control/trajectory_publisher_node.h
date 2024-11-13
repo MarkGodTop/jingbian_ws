@@ -8,6 +8,7 @@
 #include <uav_msgs/DesiredStates.h>
 #include <visualization_msgs/Marker.h>
 #include <nav_msgs/Odometry.h>
+#include <sensor_msgs/NavSatFix.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <yolov8_ros_msgs/BoundingBox.h>
 #include <yolov8_ros_msgs/BoundingBoxes.h>
@@ -43,7 +44,7 @@ private:
 
     ros::Publisher desiredStates_pub_, traj_vis_pub_, cmd_vis_pub_;
     ros::Publisher desiredPose_pub_, currentPose_pub_;
-    ros::Subscriber odom_sub_, yolo_sub_;
+    ros::Subscriber odom_sub_, yolo_sub_, gps_sub_;
     ros::ServiceClient takeoff_client_;
     uav_msgs::DesiredStates cmd_;
     nav_msgs::OdometryConstPtr odom_;
@@ -65,18 +66,20 @@ private:
     int segment_num_;
     double trajDuration_;
     yolov8_ros_msgs::BoundingBoxesConstPtr yolo_;
-    double startYaw_, finalYaw_;
+    double startYaw_, finalYaw_, gps_flag_data;
     int resX = 800;
     int resY = 600;
     std::string cameraName = "D455_RGB_01";
     std::string vehicle = "UnmannedAirplane_1";
     shared_ptr<TrajectoryGeneratorWaypoints> trajPlanWaypoints_ = make_shared<TrajectoryGeneratorWaypoints>();
+    bool gps_flag = true;
 
 public:
 
     TrajectoryPublisherNode(const ros::NodeHandle &nh, const ros::NodeHandle &nh_private);
     ~TrajectoryPublisherNode();
     void odomCallback(const nav_msgs::OdometryConstPtr &msg);
+    void gpsCallback(const sensor_msgs::NavSatFixConstPtr &msg);
     Eigen::VectorXd timeAllocation(const Eigen::MatrixXd &waypoints);
     void trajectoryGenerate(const Eigen::MatrixXd &waypoints);
     void desiredStatesPub();

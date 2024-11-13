@@ -46,7 +46,7 @@ add_library(rpclib::rpc SHARED IMPORTED)
 
 set_target_properties(rpclib::rpc PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "RPCLIB_MSGPACK=clmdep_msgpack"
-  INTERFACE_INCLUDE_DIRECTORIES "/home/ros20/AirSim/external/rpclib/rpclib-2.3.0/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/mnt/d/AirSim/external/rpclib/rpclib-2.3.0/include"
 )
 
 # Import target "rpclib::rpc" for configuration ""

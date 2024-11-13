@@ -6,5 +6,5 @@ CXX_FLAGS =  -D MSGPACK_PP_VARIADICS_MSVC=0                 -Wall -Wextra       
 
 CXX_DEFINES = -DASIO_STANDALONE -DROS_BUILD_SHARED_LIBS=1 -DRPCLIB_ASIO=clmdep_asio -DRPCLIB_FMT=clmdep_fmt -DRPCLIB_MSGPACK=clmdep_msgpack -Drpc_EXPORTS
 
-CXX_INCLUDES = -I/home/ros20/AirSim/external/rpclib/rpclib-2.3.0/include -isystem /home/ros20/AirSim/external/rpclib/rpclib-2.3.0/dependencies/include 
+CXX_INCLUDES = -I/mnt/d/AirSim/external/rpclib/rpclib-2.3.0/include -isystem /mnt/d/AirSim/external/rpclib/rpclib-2.3.0/dependencies/include 
 

@@ -1,2 +1,2 @@
 Robomaster-uav-competition/Yolov8_ros/yolov8_ros:Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs:Robomaster-uav-competition/plan_and_control:Robomaster-uav-competition/tracking_controller:Robomaster-uav-competition/trajectory_generator:Robomaster-uav-competition/uav_msgs
--DCATKIN_DEVEL_PREFIX=/home/ros20/jingbian_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ros20/jingbian_ws/install -G Unix Makefiles
+-DPYTHON_EXECUTABLE=/usr/bin/python3 -DCATKIN_DEVEL_PREFIX=/home/ros20/jingbian_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ros20/jingbian_ws/install -G Unix Makefiles

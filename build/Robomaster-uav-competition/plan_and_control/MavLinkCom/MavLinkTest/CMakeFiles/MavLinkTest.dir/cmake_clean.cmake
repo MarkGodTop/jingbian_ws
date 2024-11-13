@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "../../../../output/bin/MavLinkTest"
   "../../../../output/bin/MavLinkTest.pdb"
-  "CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o"
-  "CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o"
-  "CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp.o"
+  "CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o"
+  "CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o"
+  "CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -57,57 +57,57 @@ include Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMake
 # Include the compile flags for this target's objects.
 include Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/flags.make
 
-Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/flags.make
-Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o: /home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o"
-	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o -c /home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp
+Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/flags.make
+Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o: /mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o"
+	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o -c /mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp
 
-Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.i"
-	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp > CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.i
+Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.i"
+	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp > CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.i
 
-Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.s"
-	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp -o CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.s
+Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.s"
+	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp -o CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.s
 
-Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/flags.make
-Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o: /home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o"
-	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o -c /home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp
+Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/flags.make
+Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o: /mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o"
+	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o -c /mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp
 
-Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.i"
-	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp > CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.i
+Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.i"
+	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp > CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.i
 
-Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.s"
-	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp -o CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.s
+Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.s"
+	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp -o CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.s
 
-Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp.o: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/flags.make
-Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp.o: /home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp.o"
-	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp.o -c /home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp
+Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp.o: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/flags.make
+Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp.o: /mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp.o"
+	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp.o -c /mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp
 
-Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp.i"
-	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp > CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp.i
+Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp.i"
+	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp > CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp.i
 
-Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp.s"
-	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp -o CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp.s
+Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp.s"
+	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp -o CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp.s
 
 # Object files for target MavLinkTest
 MavLinkTest_OBJECTS = \
-"CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o" \
-"CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o" \
-"CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp.o"
+"CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o" \
+"CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o" \
+"CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp.o"
 
 # External object files for target MavLinkTest
 MavLinkTest_EXTERNAL_OBJECTS =
 
-output/bin/MavLinkTest: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o
-output/bin/MavLinkTest: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o
-output/bin/MavLinkTest: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/home/ros20/AirSim/MavLinkCom/MavLinkTest/main.cpp.o
+output/bin/MavLinkTest: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/Commands.cpp.o
+output/bin/MavLinkTest: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/UnitTests.cpp.o
+output/bin/MavLinkTest: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/mnt/d/AirSim/MavLinkCom/MavLinkTest/main.cpp.o
 output/bin/MavLinkTest: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/build.make
 output/bin/MavLinkTest: /home/ros20/jingbian_ws/devel/lib/libMavLinkCom.a
 output/bin/MavLinkTest: Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/link.txt
@@ -124,6 +124,6 @@ Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/Ma
 .PHONY : Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/clean
 
 Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/depend:
-	cd /home/ros20/jingbian_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros20/jingbian_ws/src /home/ros20/AirSim/cmake/MavLinkCom/MavLinkTest /home/ros20/jingbian_ws/build /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ros20/jingbian_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros20/jingbian_ws/src /mnt/d/AirSim/cmake/MavLinkCom/MavLinkTest /home/ros20/jingbian_ws/build /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest /home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/depend
 

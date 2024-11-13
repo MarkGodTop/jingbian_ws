@@ -6,7 +6,7 @@ add_compile_options(-std=c++14)
 
 # 设置OpenCV目录
 set(OpenCV_DIR /usr/lib/x86_64-linux-gnu/cmake/opencv4/)
-set(AIRSIM_ROOT /home/ros20/AirSim)
+set(AIRSIM_ROOT /mnt/d/AirSim)
 
 add_subdirectory("${AIRSIM_ROOT}/cmake/rpclib_wrapper" rpclib_wrapper)
 add_subdirectory("${AIRSIM_ROOT}/cmake/AirLib" AirLib)

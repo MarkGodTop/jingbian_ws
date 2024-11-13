@@ -18,7 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/jsoncpp"
-  "/home/ros20/miniconda3/include"
+  "/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../../include"
   "/usr/include/eigen3"
   "/home/ros20/jingbian_ws/src/Robomaster-uav-competition/plan_and_control/include"
   "/home/ros20/jingbian_ws/devel/include"
@@ -26,11 +26,11 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/ros20/jingbian_ws/src/Robomaster-uav-competition/trajectory_generator/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/ros20/AirSim/AirLib/deps/eigen3"
-  "/home/ros20/AirSim/AirLib/include"
-  "/home/ros20/AirSim/external/rpclib/rpclib-2.3.0/include"
-  "/home/ros20/AirSim/MavLinkCom/include"
-  "/home/ros20/AirSim/MavLinkCom/common_utils"
+  "/mnt/d/AirSim/AirLib/deps/eigen3"
+  "/mnt/d/AirSim/AirLib/include"
+  "/mnt/d/AirSim/external/rpclib/rpclib-2.3.0/include"
+  "/mnt/d/AirSim/MavLinkCom/include"
+  "/mnt/d/AirSim/MavLinkCom/common_utils"
   "/usr/include/opencv4"
   )
 

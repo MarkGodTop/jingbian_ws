@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ros20/jingbian_ws/build
 include Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/progress.make
 
 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox:
-	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs && ../../../catkin_generated/env_cached.sh /home/ros20/miniconda3/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py yolov8_ros_msgs /home/ros20/jingbian_ws/src/Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/msg/BoundingBox.msg 
+	cd /home/ros20/jingbian_ws/build/Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py yolov8_ros_msgs /home/ros20/jingbian_ws/src/Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/msg/BoundingBox.msg 
 
 _yolov8_ros_msgs_generate_messages_check_deps_BoundingBox: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox
 _yolov8_ros_msgs_generate_messages_check_deps_BoundingBox: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/build.make
