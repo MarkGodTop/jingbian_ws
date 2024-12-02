@@ -155,9 +155,11 @@ void TrajectoryPublisherNode::odomCallback(const nav_msgs::OdometryConstPtr &msg
         geometry_msgs::Point current_pos_ros;
         current_pos_ros.x = odom_->pose.pose.position.x;
         current_pos_ros.y = odom_->pose.pose.position.y;
-        current_pos_ros.z = odom_->pose.pose.position.z;
-        Eigen::Vector3d current_pos(current_pos_ros.x, current_pos_ros.y, current_pos_ros.z);
-        Eigen::Vector3d waypoint = waypoints_.row(i);
+        // current_pos_ros.z = odom_->pose.pose.position.z;
+        // Eigen::Vector3d current_pos(current_pos_ros.x, current_pos_ros.y, current_pos_ros.z);
+        // Eigen::Vector3d waypoint = waypoints_.row(i);
+        Eigen::Vector2d current_pos(current_pos_ros.x, current_pos_ros.y);
+        Eigen::Vector2d waypoint(waypoints_(i,0), waypoints_(i,1));
         distance1 = (current_pos - waypoint).norm();       
         // 如果距离小于某个阈值，则认为无人机已到达该waypoint点
         if (distance1 < 10) {
