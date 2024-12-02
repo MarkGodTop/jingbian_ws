@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/d/AirSim/cmake/AirLib
+# Install script for directory: /home/ros20/AirSim/cmake/AirLib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

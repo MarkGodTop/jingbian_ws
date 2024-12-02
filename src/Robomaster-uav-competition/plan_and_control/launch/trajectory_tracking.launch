@@ -7,6 +7,7 @@
     <node pkg="plan_and_control" type="trajectory_publisher_node" name="trajectory_publisher_node" output="screen" >
         <!--waypoints for trajectory generating-->
         <rosparam command="load" file="$(find plan_and_control)/config/waypoints.yaml" />
+        <param name="json_cpp" value="/home/ros20/jingbian_ws/file (24).json" />
     </node>
 
     <node pkg="rviz" type="rviz" name="rviz" output="screen"

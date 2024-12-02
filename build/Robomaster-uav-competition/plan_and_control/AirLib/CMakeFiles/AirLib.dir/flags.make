@@ -6,5 +6,5 @@ CXX_FLAGS =                 -Wall -Wextra                 -Wnon-virtual-dtor -Wo
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -DRPCLIB_MSGPACK=clmdep_msgpack
 
-CXX_INCLUDES = -I/mnt/d/AirSim/AirLib/deps/eigen3 -I/mnt/d/AirSim/AirLib -I/mnt/d/AirSim/AirLib/include -I/mnt/d/AirSim/MavLinkCom/include -I/mnt/d/AirSim/external/rpclib/rpclib-2.3.0/include 
+CXX_INCLUDES = -I/home/ros20/AirSim/AirLib/deps/eigen3 -I/usr/include/eigen3 -I/home/ros20/AirSim/AirLib -I/home/ros20/AirSim/AirLib/include -I/home/ros20/AirSim/MavLinkCom/include -I/home/ros20/AirSim/external/rpclib/rpclib-2.3.0/include 
 

@@ -24,7 +24,7 @@ add_custom_target(_uav_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/ros20/jingbian_ws/src/Robomaster-uav-competition/uav_msgs/msg/DesiredStates.msg" NAME_WE)
 add_custom_target(_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "uav_msgs" "/home/ros20/jingbian_ws/src/Robomaster-uav-competition/uav_msgs/msg/DesiredStates.msg" "geometry_msgs/Vector3:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "uav_msgs" "/home/ros20/jingbian_ws/src/Robomaster-uav-competition/uav_msgs/msg/DesiredStates.msg" "std_msgs/Header:geometry_msgs/Vector3"
 )
 
 get_filename_component(_filename "/home/ros20/jingbian_ws/src/Robomaster-uav-competition/uav_msgs/srv/Takeoff.srv" NAME_WE)
@@ -47,7 +47,7 @@ _generate_msg_cpp(uav_msgs
 _generate_msg_cpp(uav_msgs
   "/home/ros20/jingbian_ws/src/Robomaster-uav-competition/uav_msgs/msg/DesiredStates.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/uav_msgs
 )
 
@@ -96,7 +96,7 @@ _generate_msg_eus(uav_msgs
 _generate_msg_eus(uav_msgs
   "/home/ros20/jingbian_ws/src/Robomaster-uav-competition/uav_msgs/msg/DesiredStates.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/uav_msgs
 )
 
@@ -145,7 +145,7 @@ _generate_msg_lisp(uav_msgs
 _generate_msg_lisp(uav_msgs
   "/home/ros20/jingbian_ws/src/Robomaster-uav-competition/uav_msgs/msg/DesiredStates.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/uav_msgs
 )
 
@@ -194,7 +194,7 @@ _generate_msg_nodejs(uav_msgs
 _generate_msg_nodejs(uav_msgs
   "/home/ros20/jingbian_ws/src/Robomaster-uav-competition/uav_msgs/msg/DesiredStates.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/uav_msgs
 )
 
@@ -243,7 +243,7 @@ _generate_msg_py(uav_msgs
 _generate_msg_py(uav_msgs
   "/home/ros20/jingbian_ws/src/Robomaster-uav-competition/uav_msgs/msg/DesiredStates.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/uav_msgs
 )
 

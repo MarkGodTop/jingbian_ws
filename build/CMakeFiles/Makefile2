@@ -57,8 +57,6 @@ all: gtest/all
 all: Robomaster-uav-competition/tracking_controller/all
 all: Robomaster-uav-competition/trajectory_generator/all
 all: Robomaster-uav-competition/uav_msgs/all
-all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros/all
-all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/all
 all: Robomaster-uav-competition/plan_and_control/all
 
 .PHONY : all
@@ -68,8 +66,6 @@ preinstall: gtest/preinstall
 preinstall: Robomaster-uav-competition/tracking_controller/preinstall
 preinstall: Robomaster-uav-competition/trajectory_generator/preinstall
 preinstall: Robomaster-uav-competition/uav_msgs/preinstall
-preinstall: Robomaster-uav-competition/Yolov8_ros/yolov8_ros/preinstall
-preinstall: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/preinstall
 preinstall: Robomaster-uav-competition/plan_and_control/preinstall
 
 .PHONY : preinstall
@@ -84,67 +80,17 @@ clean: gtest/clean
 clean: Robomaster-uav-competition/tracking_controller/clean
 clean: Robomaster-uav-competition/trajectory_generator/clean
 clean: Robomaster-uav-competition/uav_msgs/clean
-clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros/clean
-clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean
 clean: Robomaster-uav-competition/plan_and_control/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory Robomaster-uav-competition/Yolov8_ros/yolov8_ros
-
-# Recursive "all" directory target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros/all:
-
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros/all
-
-# Recursive "preinstall" directory target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros/preinstall:
-
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros/preinstall
-
-# Recursive "clean" directory target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros/clean:
-
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros/clean
-
-#=============================================================================
-# Directory level rules for directory Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs
-
-# Recursive "all" directory target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/all
-
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/all
-
-# Recursive "preinstall" directory target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/preinstall:
-
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/preinstall
-
-# Recursive "clean" directory target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/clean
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/clean
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/clean
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/clean
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/clean
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/clean
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/clean
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/clean
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/clean
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/clean
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/clean
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/clean
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/clean
-
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/clean
 
 #=============================================================================
 # Directory level rules for directory Robomaster-uav-competition/plan_and_control
 
 # Recursive "all" directory target.
 Robomaster-uav-competition/plan_and_control/all: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/all
-Robomaster-uav-competition/plan_and_control/all: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all
 Robomaster-uav-competition/plan_and_control/all: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/all
+Robomaster-uav-competition/plan_and_control/all: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all
 Robomaster-uav-competition/plan_and_control/all: Robomaster-uav-competition/plan_and_control/rpclib_wrapper/all
 Robomaster-uav-competition/plan_and_control/all: Robomaster-uav-competition/plan_and_control/AirLib/all
 Robomaster-uav-competition/plan_and_control/all: Robomaster-uav-competition/plan_and_control/MavLinkCom/all
@@ -159,19 +105,24 @@ Robomaster-uav-competition/plan_and_control/preinstall: Robomaster-uav-competiti
 .PHONY : Robomaster-uav-competition/plan_and_control/preinstall
 
 # Recursive "clean" directory target.
+Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/clean
+Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/clean
+Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/clean
+Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/clean
+Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/clean
 Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
 Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean
 Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
 Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
-Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/clean
 Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
+Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/clean
+Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/clean
 Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/clean
-Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/clean
+Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/clean
 Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/rpclib_wrapper/clean
 Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/AirLib/clean
 Robomaster-uav-competition/plan_and_control/clean: Robomaster-uav-competition/plan_and_control/MavLinkCom/clean
@@ -568,7 +519,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=44,45 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=47,48 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -595,7 +546,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=42,43 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=45,46 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -622,7 +573,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=48,49 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=51,52 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -649,7 +600,7 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=46,47 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=49,50 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -676,7 +627,7 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 Robomaster-uav-competition/tracking_controller/CMakeFiles/tracking_controller.dir/all:
 	$(MAKE) -f Robomaster-uav-competition/tracking_controller/CMakeFiles/tracking_controller.dir/build.make Robomaster-uav-competition/tracking_controller/CMakeFiles/tracking_controller.dir/depend
 	$(MAKE) -f Robomaster-uav-competition/tracking_controller/CMakeFiles/tracking_controller.dir/build.make Robomaster-uav-competition/tracking_controller/CMakeFiles/tracking_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=63,64 "Built target tracking_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=67,68 "Built target tracking_controller"
 .PHONY : Robomaster-uav-competition/tracking_controller/CMakeFiles/tracking_controller.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1108,7 +1059,7 @@ Robomaster-uav-competition/tracking_controller/CMakeFiles/rosgraph_msgs_generate
 Robomaster-uav-competition/trajectory_generator/CMakeFiles/trajectory_generator.dir/all:
 	$(MAKE) -f Robomaster-uav-competition/trajectory_generator/CMakeFiles/trajectory_generator.dir/build.make Robomaster-uav-competition/trajectory_generator/CMakeFiles/trajectory_generator.dir/depend
 	$(MAKE) -f Robomaster-uav-competition/trajectory_generator/CMakeFiles/trajectory_generator.dir/build.make Robomaster-uav-competition/trajectory_generator/CMakeFiles/trajectory_generator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=65,66 "Built target trajectory_generator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=69,70 "Built target trajectory_generator"
 .PHONY : Robomaster-uav-competition/trajectory_generator/CMakeFiles/trajectory_generator.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1603,7 +1554,7 @@ Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages.dir/al
 
 # Build rule for subdir invocation for target.
 Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
 .PHONY : Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages.dir/rule
@@ -1656,7 +1607,7 @@ Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_py.dir
 Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_py.dir/all: Robomaster-uav-competition/uav_msgs/CMakeFiles/_uav_msgs_generate_messages_check_deps_DesiredStates.dir/all
 	$(MAKE) -f Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=84,85,86,87,88 "Built target uav_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=90,91,92,93,94 "Built target uav_msgs_generate_messages_py"
 .PHONY : Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1687,7 +1638,7 @@ Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_eus.di
 Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_eus.dir/all: Robomaster-uav-competition/uav_msgs/CMakeFiles/_uav_msgs_generate_messages_check_deps_DesiredStates.dir/all
 	$(MAKE) -f Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_eus.dir/build.make Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_eus.dir/build.make Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=75,76,77,78 "Built target uav_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=80,81,82,83 "Built target uav_msgs_generate_messages_eus"
 .PHONY : Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1772,7 +1723,7 @@ Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_cpp.di
 Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_cpp.dir/all: Robomaster-uav-competition/uav_msgs/CMakeFiles/_uav_msgs_generate_messages_check_deps_DesiredStates.dir/all
 	$(MAKE) -f Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_cpp.dir/build.make Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_cpp.dir/build.make Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=72,73,74 "Built target uav_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=77,78,79 "Built target uav_msgs_generate_messages_cpp"
 .PHONY : Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1831,7 +1782,7 @@ Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_gennodejs.dir/all: Robom
 
 # Build rule for subdir invocation for target.
 Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
 .PHONY : Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_gennodejs.dir/rule
@@ -1911,7 +1862,7 @@ Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_lisp.d
 Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_lisp.dir/all: Robomaster-uav-competition/uav_msgs/CMakeFiles/_uav_msgs_generate_messages_check_deps_DesiredStates.dir/all
 	$(MAKE) -f Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_lisp.dir/build.make Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_lisp.dir/build.make Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=79,80,81 "Built target uav_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=84,85,86 "Built target uav_msgs_generate_messages_lisp"
 .PHONY : Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1942,12 +1893,12 @@ Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_nodejs
 Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_nodejs.dir/all: Robomaster-uav-competition/uav_msgs/CMakeFiles/_uav_msgs_generate_messages_check_deps_DesiredStates.dir/all
 	$(MAKE) -f Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_nodejs.dir/build.make Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_nodejs.dir/build.make Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=82,83 "Built target uav_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=87,88,89 "Built target uav_msgs_generate_messages_nodejs"
 .PHONY : Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
 .PHONY : Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_nodejs.dir/rule
@@ -1963,369 +1914,145 @@ Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_nodejs
 .PHONY : Robomaster-uav-competition/uav_msgs/CMakeFiles/uav_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir
+# Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir
 
 # All Build rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/all:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num= "Built target _yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes"
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/all: Robomaster-uav-competition/trajectory_generator/CMakeFiles/trajectory_generator.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/all: Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/all: Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/all: Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/all
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/depend
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=73,74 "Built target trajectory_replan_node"
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/all
 
 # Build rule for subdir invocation for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/rule: cmake_check_build_system
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 58
+	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/rule
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule
 
 # Convenience name for target.
-_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/rule
+trajectory_replan_node: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule
 
-.PHONY : _yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes
+.PHONY : trajectory_replan_node
 
 # clean rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/clean
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/clean
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/clean:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/clean
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/clean
 
 #=============================================================================
-# Target rules for target Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir
+# Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir
 
 # All Build rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/all:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num= "Built target _yolov8_ros_msgs_generate_messages_check_deps_BoundingBox"
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/all: Robomaster-uav-competition/tracking_controller/CMakeFiles/tracking_controller.dir/all
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/depend
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=75,76 "Built target trajectory_tracking_node"
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/all
 
 # Build rule for subdir invocation for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/rule: cmake_check_build_system
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/rule
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule
 
 # Convenience name for target.
-_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/rule
+trajectory_tracking_node: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule
 
-.PHONY : _yolov8_ros_msgs_generate_messages_check_deps_BoundingBox
+.PHONY : trajectory_tracking_node
 
 # clean rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/clean
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/clean
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/clean:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/clean
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/clean
 
 #=============================================================================
-# Target rules for target Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir
+# Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir
 
 # All Build rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/all: Robomaster-uav-competition/tracking_controller/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/all
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=89,90 "Built target yolov8_ros_msgs_generate_messages_cpp"
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all: Robomaster-uav-competition/trajectory_generator/CMakeFiles/trajectory_generator.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all: Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all: Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all: Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/all
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/depend
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=71,72 "Built target trajectory_publisher_node"
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all
 
 # Build rule for subdir invocation for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 58
+	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/rule
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule
 
 # Convenience name for target.
-yolov8_ros_msgs_generate_messages_cpp: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/rule
+trajectory_publisher_node: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule
 
-.PHONY : yolov8_ros_msgs_generate_messages_cpp
+.PHONY : trajectory_publisher_node
 
 # clean rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/clean
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/clean
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/clean:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/clean
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/clean
 
 #=============================================================================
-# Target rules for target Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir
+# Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/all
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num= "Built target yolov8_ros_msgs_generate_messages"
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num= "Built target yolov8_ros_msgs_generate_messages_py"
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 12
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-yolov8_ros_msgs_generate_messages: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/rule
-
-.PHONY : yolov8_ros_msgs_generate_messages
-
-# clean rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/clean
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/clean
-
-#=============================================================================
-# Target rules for target Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir
-
-# All Build rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/all
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num= "Built target yolov8_ros_msgs_gencpp"
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/all
-
-# Build rule for subdir invocation for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/rule
-
-# Convenience name for target.
-yolov8_ros_msgs_gencpp: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/rule
-
-.PHONY : yolov8_ros_msgs_gencpp
-
-# clean rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/clean
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/clean
-
-#=============================================================================
-# Target rules for target Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir
-
-# All Build rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/all: Robomaster-uav-competition/tracking_controller/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/all
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=91,92,93 "Built target yolov8_ros_msgs_generate_messages_eus"
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-yolov8_ros_msgs_generate_messages_eus: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/rule
-
-.PHONY : yolov8_ros_msgs_generate_messages_eus
-
-# clean rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/clean
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/clean
-
-#=============================================================================
-# Target rules for target Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir
-
-# All Build rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/all
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num= "Built target yolov8_ros_msgs_geneus"
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/all
-
-# Build rule for subdir invocation for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/rule
-
-# Convenience name for target.
-yolov8_ros_msgs_geneus: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/rule
-
-.PHONY : yolov8_ros_msgs_geneus
-
-# clean rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/clean
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/clean
-
-#=============================================================================
-# Target rules for target Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/all: Robomaster-uav-competition/tracking_controller/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/all
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=94,95 "Built target yolov8_ros_msgs_generate_messages_lisp"
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-yolov8_ros_msgs_generate_messages_lisp: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : yolov8_ros_msgs_generate_messages_lisp
-
-# clean rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/clean
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/clean
-
-#=============================================================================
-# Target rules for target Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir
-
-# All Build rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/all
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num= "Built target yolov8_ros_msgs_genlisp"
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/all
-
-# Build rule for subdir invocation for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/rule
-
-# Convenience name for target.
-yolov8_ros_msgs_genlisp: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/rule
-
-.PHONY : yolov8_ros_msgs_genlisp
-
-# clean rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/clean
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/clean
-
-#=============================================================================
-# Target rules for target Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir
-
-# All Build rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/all
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num= "Built target yolov8_ros_msgs_gennodejs"
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/all
-
-# Build rule for subdir invocation for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/rule
-
-# Convenience name for target.
-yolov8_ros_msgs_gennodejs: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/rule
-
-.PHONY : yolov8_ros_msgs_gennodejs
-
-# clean rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/clean
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/clean
-
-#=============================================================================
-# Target rules for target Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir
-
-# All Build rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/all: Robomaster-uav-competition/tracking_controller/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/all
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=96,97 "Built target yolov8_ros_msgs_generate_messages_nodejs"
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-yolov8_ros_msgs_generate_messages_nodejs: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : yolov8_ros_msgs_generate_messages_nodejs
-
-# clean rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/clean
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/clean
-
-#=============================================================================
-# Target rules for target Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/all: Robomaster-uav-competition/tracking_controller/CMakeFiles/std_msgs_generate_messages_py.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/all
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/all
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=98,99,100 "Built target yolov8_ros_msgs_generate_messages_py"
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-yolov8_ros_msgs_generate_messages_py: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/rule
+yolov8_ros_msgs_generate_messages_py: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/rule
 
 .PHONY : yolov8_ros_msgs_generate_messages_py
 
 # clean rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/clean
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/clean
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/clean
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir
+# Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/all: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/all
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num= "Built target yolov8_ros_msgs_genpy"
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num= "Built target yolov8_ros_msgs_generate_messages_nodejs"
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-yolov8_ros_msgs_genpy: Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/rule
+yolov8_ros_msgs_generate_messages_nodejs: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : yolov8_ros_msgs_genpy
+.PHONY : yolov8_ros_msgs_generate_messages_nodejs
 
 # clean rule for target.
-Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/clean
-.PHONY : Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/clean
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/clean
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
 # Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_cpp.dir
@@ -2463,36 +2190,6 @@ Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_genera
 .PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir
-
-# All Build rule for target.
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/all: Robomaster-uav-competition/trajectory_generator/CMakeFiles/trajectory_generator.dir/all
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/all: Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir/all
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/all: Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/all
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/all: Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/all
-	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=68,69 "Built target trajectory_replan_node"
-.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/all
-
-# Build rule for subdir invocation for target.
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 54
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule
-
-# Convenience name for target.
-trajectory_replan_node: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule
-
-.PHONY : trajectory_replan_node
-
-# clean rule for target.
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/clean
-.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/clean
-
-#=============================================================================
 # Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_py.dir
 
 # All Build rule for target.
@@ -2518,6 +2215,60 @@ visualization_msgs_generate_messages_py: Robomaster-uav-competition/plan_and_con
 Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean:
 	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
 .PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num= "Built target yolov8_ros_msgs_generate_messages_lisp"
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+yolov8_ros_msgs_generate_messages_lisp: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : yolov8_ros_msgs_generate_messages_lisp
+
+# clean rule for target.
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/clean
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num= "Built target yolov8_ros_msgs_generate_messages_eus"
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+yolov8_ros_msgs_generate_messages_eus: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/rule
+
+.PHONY : yolov8_ros_msgs_generate_messages_eus
+
+# clean rule for target.
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/clean
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
 # Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir
@@ -2628,61 +2379,31 @@ Robomaster-uav-competition/plan_and_control/CMakeFiles/sensor_msgs_generate_mess
 .PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir
+# Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all: Robomaster-uav-competition/trajectory_generator/CMakeFiles/trajectory_generator.dir/all
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all: Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir/all
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all: Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/all
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all: Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/all
-	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=67 "Built target trajectory_publisher_node"
-.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num= "Built target yolov8_ros_msgs_generate_messages_cpp"
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 53
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/all
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-trajectory_publisher_node: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule
+yolov8_ros_msgs_generate_messages_cpp: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : trajectory_publisher_node
-
-# clean rule for target.
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/clean
-.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/clean
-
-#=============================================================================
-# Target rules for target Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir
-
-# All Build rule for target.
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/all: Robomaster-uav-competition/tracking_controller/CMakeFiles/tracking_controller.dir/all
-	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/depend
-	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=70,71 "Built target trajectory_tracking_node"
-.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/all
-
-# Build rule for subdir invocation for target.
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
-.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule
-
-# Convenience name for target.
-trajectory_tracking_node: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule
-
-.PHONY : trajectory_tracking_node
+.PHONY : yolov8_ros_msgs_generate_messages_cpp
 
 # clean rule for target.
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/clean:
-	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/clean
-.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/clean
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/clean
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
 # Target rules for target Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir
@@ -2691,12 +2412,12 @@ Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.
 Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir/all:
 	$(MAKE) -f Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir/build.make Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir/depend
 	$(MAKE) -f Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir/build.make Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=50,51,52,53,54,55,56,57,58,59,60,61,62 "Built target rpc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=53,54,55,56,57,58,59,60,61,62,63,64,65,66 "Built target rpc"
 .PHONY : Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir/all
 
 # Build rule for subdir invocation for target.
 Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
 .PHONY : Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib/CMakeFiles/rpc.dir/rule
@@ -2719,12 +2440,12 @@ Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/all: Ro
 Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/all: Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/all
 	$(MAKE) -f Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/build.make Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/depend
 	$(MAKE) -f Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/build.make Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target AirLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target AirLib"
 .PHONY : Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/all
 
 # Build rule for subdir invocation for target.
 Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
 .PHONY : Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/rule
@@ -2746,12 +2467,12 @@ Robomaster-uav-competition/plan_and_control/AirLib/CMakeFiles/AirLib.dir/clean:
 Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/all:
 	$(MAKE) -f Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/build.make Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/depend
 	$(MAKE) -f Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/build.make Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37 "Built target MavLinkCom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40 "Built target MavLinkCom"
 .PHONY : Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/all
 
 # Build rule for subdir invocation for target.
 Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 29
 	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
 .PHONY : Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/rule
@@ -2773,12 +2494,12 @@ Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir
 Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/all: Robomaster-uav-competition/plan_and_control/MavLinkCom/CMakeFiles/MavLinkCom.dir/all
 	$(MAKE) -f Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/build.make Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/depend
 	$(MAKE) -f Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/build.make Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=38,39,40,41 "Built target MavLinkTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros20/jingbian_ws/build/CMakeFiles --progress-num=41,42,43,44 "Built target MavLinkTest"
 .PHONY : Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/all
 
 # Build rule for subdir invocation for target.
 Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 33
 	$(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros20/jingbian_ws/build/CMakeFiles 0
 .PHONY : Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest/CMakeFiles/MavLinkTest.dir/rule

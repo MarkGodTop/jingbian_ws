@@ -168,6 +168,81 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule
+
+# Convenience name for target.
+trajectory_replan_node: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule
+
+.PHONY : trajectory_replan_node
+
+# fast build rule for target.
+trajectory_replan_node/fast:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build
+.PHONY : trajectory_replan_node/fast
+
+# Convenience name for target.
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule
+
+# Convenience name for target.
+trajectory_tracking_node: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule
+
+.PHONY : trajectory_tracking_node
+
+# fast build rule for target.
+trajectory_tracking_node/fast:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build
+.PHONY : trajectory_tracking_node/fast
+
+# Convenience name for target.
+Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule
+
+# Convenience name for target.
+trajectory_publisher_node: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule
+
+.PHONY : trajectory_publisher_node
+
+# fast build rule for target.
+trajectory_publisher_node/fast:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build
+.PHONY : trajectory_publisher_node/fast
+
+# Convenience name for target.
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/rule:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/rule
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+yolov8_ros_msgs_generate_messages_py: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/rule
+
+.PHONY : yolov8_ros_msgs_generate_messages_py
+
+# fast build rule for target.
+yolov8_ros_msgs_generate_messages_py/fast:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build
+.PHONY : yolov8_ros_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/rule
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+yolov8_ros_msgs_generate_messages_nodejs: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : yolov8_ros_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+yolov8_ros_msgs_generate_messages_nodejs/fast:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build
+.PHONY : yolov8_ros_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
 Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
 	cd /home/ros20/jingbian_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
 .PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
@@ -243,21 +318,6 @@ visualization_msgs_generate_messages_nodejs/fast:
 .PHONY : visualization_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule:
-	cd /home/ros20/jingbian_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule
-.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule
-
-# Convenience name for target.
-trajectory_replan_node: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/rule
-
-.PHONY : trajectory_replan_node
-
-# fast build rule for target.
-trajectory_replan_node/fast:
-	cd /home/ros20/jingbian_ws/build && $(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build
-.PHONY : trajectory_replan_node/fast
-
-# Convenience name for target.
 Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
 	cd /home/ros20/jingbian_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 .PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
@@ -271,6 +331,36 @@ visualization_msgs_generate_messages_py: Robomaster-uav-competition/plan_and_con
 visualization_msgs_generate_messages_py/fast:
 	cd /home/ros20/jingbian_ws/build && $(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
 .PHONY : visualization_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/rule:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/rule
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+yolov8_ros_msgs_generate_messages_lisp: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : yolov8_ros_msgs_generate_messages_lisp
+
+# fast build rule for target.
+yolov8_ros_msgs_generate_messages_lisp/fast:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build
+.PHONY : yolov8_ros_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/rule:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/rule
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+yolov8_ros_msgs_generate_messages_eus: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/rule
+
+.PHONY : yolov8_ros_msgs_generate_messages_eus
+
+# fast build rule for target.
+yolov8_ros_msgs_generate_messages_eus/fast:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build
+.PHONY : yolov8_ros_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 Robomaster-uav-competition/plan_and_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
@@ -333,34 +423,19 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule:
-	cd /home/ros20/jingbian_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule
-.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule
+Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/rule:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/rule
+.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-trajectory_publisher_node: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/rule
+yolov8_ros_msgs_generate_messages_cpp: Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : trajectory_publisher_node
+.PHONY : yolov8_ros_msgs_generate_messages_cpp
 
 # fast build rule for target.
-trajectory_publisher_node/fast:
-	cd /home/ros20/jingbian_ws/build && $(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build
-.PHONY : trajectory_publisher_node/fast
-
-# Convenience name for target.
-Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule:
-	cd /home/ros20/jingbian_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule
-.PHONY : Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule
-
-# Convenience name for target.
-trajectory_tracking_node: Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/rule
-
-.PHONY : trajectory_tracking_node
-
-# fast build rule for target.
-trajectory_tracking_node/fast:
-	cd /home/ros20/jingbian_ws/build && $(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build
-.PHONY : trajectory_tracking_node/fast
+yolov8_ros_msgs_generate_messages_cpp/fast:
+	cd /home/ros20/jingbian_ws/build && $(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build
+.PHONY : yolov8_ros_msgs_generate_messages_cpp/fast
 
 src/trajectory_publisher_node.o: src/trajectory_publisher_node.cpp.o
 
@@ -455,20 +530,25 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... trajectory_replan_node"
+	@echo "... trajectory_tracking_node"
+	@echo "... list_install_components"
+	@echo "... trajectory_publisher_node"
+	@echo "... yolov8_ros_msgs_generate_messages_py"
+	@echo "... yolov8_ros_msgs_generate_messages_nodejs"
 	@echo "... visualization_msgs_generate_messages_cpp"
 	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... visualization_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... visualization_msgs_generate_messages_nodejs"
-	@echo "... trajectory_replan_node"
 	@echo "... visualization_msgs_generate_messages_py"
+	@echo "... yolov8_ros_msgs_generate_messages_lisp"
+	@echo "... yolov8_ros_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... list_install_components"
-	@echo "... trajectory_publisher_node"
-	@echo "... trajectory_tracking_node"
+	@echo "... yolov8_ros_msgs_generate_messages_cpp"
 	@echo "... src/trajectory_publisher_node.o"
 	@echo "... src/trajectory_publisher_node.i"
 	@echo "... src/trajectory_publisher_node.s"

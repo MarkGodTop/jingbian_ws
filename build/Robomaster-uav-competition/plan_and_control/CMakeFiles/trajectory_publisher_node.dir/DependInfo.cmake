@@ -27,11 +27,11 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/ros20/jingbian_ws/src/Robomaster-uav-competition/trajectory_generator/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/mnt/d/AirSim/AirLib/deps/eigen3"
-  "/mnt/d/AirSim/AirLib/include"
-  "/mnt/d/AirSim/external/rpclib/rpclib-2.3.0/include"
-  "/mnt/d/AirSim/MavLinkCom/include"
-  "/mnt/d/AirSim/MavLinkCom/common_utils"
+  "/home/ros20/AirSim/AirLib/deps/eigen3"
+  "/home/ros20/AirSim/AirLib/include"
+  "/home/ros20/AirSim/external/rpclib/rpclib-2.3.0/include"
+  "/home/ros20/AirSim/MavLinkCom/include"
+  "/home/ros20/AirSim/MavLinkCom/common_utils"
   "/usr/include/opencv4"
   )
 

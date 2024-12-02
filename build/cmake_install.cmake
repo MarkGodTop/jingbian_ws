@@ -134,8 +134,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/ros20/jingbian_ws/build/Robomaster-uav-competition/tracking_controller/cmake_install.cmake")
   include("/home/ros20/jingbian_ws/build/Robomaster-uav-competition/trajectory_generator/cmake_install.cmake")
   include("/home/ros20/jingbian_ws/build/Robomaster-uav-competition/uav_msgs/cmake_install.cmake")
-  include("/home/ros20/jingbian_ws/build/Robomaster-uav-competition/Yolov8_ros/yolov8_ros/cmake_install.cmake")
-  include("/home/ros20/jingbian_ws/build/Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/cmake_install.cmake")
   include("/home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/cmake_install.cmake")
 
 endif()

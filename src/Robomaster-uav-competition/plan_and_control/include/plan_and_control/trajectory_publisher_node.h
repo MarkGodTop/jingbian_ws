@@ -69,10 +69,15 @@ private:
     double startYaw_, finalYaw_, gps_flag_data;
     int resX = 800;
     int resY = 600;
+    int waypoint_flag = 0;
+    std::string json_cpp;
+    std::string waypoint_flag_data = "Point_1_1";
     std::string cameraName = "D455_RGB_01";
-    std::string vehicle = "UnmannedAirplane_1";
+    std::string vehicle = "CRHAirplane_1";
     shared_ptr<TrajectoryGeneratorWaypoints> trajPlanWaypoints_ = make_shared<TrajectoryGeneratorWaypoints>();
     bool gps_flag = true;
+    std::map<int, std::vector<std::string>> taskMap;
+    double distance1 = 0;
 
 public:
 

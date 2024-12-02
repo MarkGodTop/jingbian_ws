@@ -21,7 +21,7 @@ AirLib_BINARY_DIR:STATIC=/home/ros20/jingbian_ws/build/Robomaster-uav-competitio
 AirLib_LIB_DEPENDS:STATIC=general;-lpthread;general;rpc;general;MavLinkCom;
 
 //Value Computed by CMake
-AirLib_SOURCE_DIR:STATIC=/mnt/d/AirSim/cmake/AirLib
+AirLib_SOURCE_DIR:STATIC=/home/ros20/AirSim/cmake/AirLib
 
 //Builds the googlemock subproject
 BUILD_GMOCK:BOOL=ON
@@ -368,13 +368,13 @@ MavLinkCom_BINARY_DIR:STATIC=/home/ros20/jingbian_ws/build/Robomaster-uav-compet
 MavLinkCom_LIB_DEPENDS:STATIC=general;-lpthread;
 
 //Value Computed by CMake
-MavLinkCom_SOURCE_DIR:STATIC=/mnt/d/AirSim/cmake/MavLinkCom
+MavLinkCom_SOURCE_DIR:STATIC=/home/ros20/AirSim/cmake/MavLinkCom
 
 //Value Computed by CMake
 MavLinkTest_BINARY_DIR:STATIC=/home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/MavLinkCom/MavLinkTest
 
 //Value Computed by CMake
-MavLinkTest_SOURCE_DIR:STATIC=/mnt/d/AirSim/cmake/MavLinkCom/MavLinkTest
+MavLinkTest_SOURCE_DIR:STATIC=/home/ros20/AirSim/cmake/MavLinkCom/MavLinkTest
 
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests3
@@ -594,13 +594,13 @@ rostime_DIR:PATH=/opt/ros/noetic/share/rostime/cmake
 rpc_BINARY_DIR:STATIC=/home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/rpclib_wrapper/rpclib
 
 //Value Computed by CMake
-rpc_SOURCE_DIR:STATIC=/mnt/d/AirSim/external/rpclib/rpclib-2.3.0
+rpc_SOURCE_DIR:STATIC=/home/ros20/AirSim/external/rpclib/rpclib-2.3.0
 
 //Value Computed by CMake
 rpclib_wrapper_BINARY_DIR:STATIC=/home/ros20/jingbian_ws/build/Robomaster-uav-competition/plan_and_control/rpclib_wrapper
 
 //Value Computed by CMake
-rpclib_wrapper_SOURCE_DIR:STATIC=/mnt/d/AirSim/cmake/rpclib_wrapper
+rpclib_wrapper_SOURCE_DIR:STATIC=/home/ros20/AirSim/cmake/rpclib_wrapper
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/noetic/share/sensor_msgs/cmake
@@ -813,7 +813,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

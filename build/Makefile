@@ -896,147 +896,43 @@ uav_msgs_generate_messages_nodejs/fast:
 .PHONY : uav_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named _yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes
+# Target rules for targets named trajectory_replan_node
 
 # Build rule for target.
-_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes
-.PHONY : _yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes
+trajectory_replan_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_replan_node
+.PHONY : trajectory_replan_node
 
 # fast build rule for target.
-_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes/fast:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes.dir/build
-.PHONY : _yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes/fast
+trajectory_replan_node/fast:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build
+.PHONY : trajectory_replan_node/fast
 
 #=============================================================================
-# Target rules for targets named _yolov8_ros_msgs_generate_messages_check_deps_BoundingBox
+# Target rules for targets named trajectory_tracking_node
 
 # Build rule for target.
-_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _yolov8_ros_msgs_generate_messages_check_deps_BoundingBox
-.PHONY : _yolov8_ros_msgs_generate_messages_check_deps_BoundingBox
+trajectory_tracking_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_tracking_node
+.PHONY : trajectory_tracking_node
 
 # fast build rule for target.
-_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox/fast:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/_yolov8_ros_msgs_generate_messages_check_deps_BoundingBox.dir/build
-.PHONY : _yolov8_ros_msgs_generate_messages_check_deps_BoundingBox/fast
+trajectory_tracking_node/fast:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build
+.PHONY : trajectory_tracking_node/fast
 
 #=============================================================================
-# Target rules for targets named yolov8_ros_msgs_generate_messages_cpp
+# Target rules for targets named trajectory_publisher_node
 
 # Build rule for target.
-yolov8_ros_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_generate_messages_cpp
-.PHONY : yolov8_ros_msgs_generate_messages_cpp
+trajectory_publisher_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_publisher_node
+.PHONY : trajectory_publisher_node
 
 # fast build rule for target.
-yolov8_ros_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build
-.PHONY : yolov8_ros_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named yolov8_ros_msgs_generate_messages
-
-# Build rule for target.
-yolov8_ros_msgs_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_generate_messages
-.PHONY : yolov8_ros_msgs_generate_messages
-
-# fast build rule for target.
-yolov8_ros_msgs_generate_messages/fast:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages.dir/build
-.PHONY : yolov8_ros_msgs_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named yolov8_ros_msgs_gencpp
-
-# Build rule for target.
-yolov8_ros_msgs_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_gencpp
-.PHONY : yolov8_ros_msgs_gencpp
-
-# fast build rule for target.
-yolov8_ros_msgs_gencpp/fast:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gencpp.dir/build
-.PHONY : yolov8_ros_msgs_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named yolov8_ros_msgs_generate_messages_eus
-
-# Build rule for target.
-yolov8_ros_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_generate_messages_eus
-.PHONY : yolov8_ros_msgs_generate_messages_eus
-
-# fast build rule for target.
-yolov8_ros_msgs_generate_messages_eus/fast:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build
-.PHONY : yolov8_ros_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named yolov8_ros_msgs_geneus
-
-# Build rule for target.
-yolov8_ros_msgs_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_geneus
-.PHONY : yolov8_ros_msgs_geneus
-
-# fast build rule for target.
-yolov8_ros_msgs_geneus/fast:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_geneus.dir/build
-.PHONY : yolov8_ros_msgs_geneus/fast
-
-#=============================================================================
-# Target rules for targets named yolov8_ros_msgs_generate_messages_lisp
-
-# Build rule for target.
-yolov8_ros_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_generate_messages_lisp
-.PHONY : yolov8_ros_msgs_generate_messages_lisp
-
-# fast build rule for target.
-yolov8_ros_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build
-.PHONY : yolov8_ros_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named yolov8_ros_msgs_genlisp
-
-# Build rule for target.
-yolov8_ros_msgs_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_genlisp
-.PHONY : yolov8_ros_msgs_genlisp
-
-# fast build rule for target.
-yolov8_ros_msgs_genlisp/fast:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genlisp.dir/build
-.PHONY : yolov8_ros_msgs_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named yolov8_ros_msgs_gennodejs
-
-# Build rule for target.
-yolov8_ros_msgs_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_gennodejs
-.PHONY : yolov8_ros_msgs_gennodejs
-
-# fast build rule for target.
-yolov8_ros_msgs_gennodejs/fast:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_gennodejs.dir/build
-.PHONY : yolov8_ros_msgs_gennodejs/fast
-
-#=============================================================================
-# Target rules for targets named yolov8_ros_msgs_generate_messages_nodejs
-
-# Build rule for target.
-yolov8_ros_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_generate_messages_nodejs
-.PHONY : yolov8_ros_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-yolov8_ros_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build
-.PHONY : yolov8_ros_msgs_generate_messages_nodejs/fast
+trajectory_publisher_node/fast:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build
+.PHONY : trajectory_publisher_node/fast
 
 #=============================================================================
 # Target rules for targets named yolov8_ros_msgs_generate_messages_py
@@ -1048,21 +944,21 @@ yolov8_ros_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 yolov8_ros_msgs_generate_messages_py/fast:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_py.dir/build
 .PHONY : yolov8_ros_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named yolov8_ros_msgs_genpy
+# Target rules for targets named yolov8_ros_msgs_generate_messages_nodejs
 
 # Build rule for target.
-yolov8_ros_msgs_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_genpy
-.PHONY : yolov8_ros_msgs_genpy
+yolov8_ros_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_generate_messages_nodejs
+.PHONY : yolov8_ros_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-yolov8_ros_msgs_genpy/fast:
-	$(MAKE) -f Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/build.make Robomaster-uav-competition/Yolov8_ros/yolov8_ros_msgs/CMakeFiles/yolov8_ros_msgs_genpy.dir/build
-.PHONY : yolov8_ros_msgs_genpy/fast
+yolov8_ros_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_nodejs.dir/build
+.PHONY : yolov8_ros_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named visualization_msgs_generate_messages_cpp
@@ -1130,19 +1026,6 @@ visualization_msgs_generate_messages_nodejs/fast:
 .PHONY : visualization_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named trajectory_replan_node
-
-# Build rule for target.
-trajectory_replan_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 trajectory_replan_node
-.PHONY : trajectory_replan_node
-
-# fast build rule for target.
-trajectory_replan_node/fast:
-	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_replan_node.dir/build
-.PHONY : trajectory_replan_node/fast
-
-#=============================================================================
 # Target rules for targets named visualization_msgs_generate_messages_py
 
 # Build rule for target.
@@ -1154,6 +1037,32 @@ visualization_msgs_generate_messages_py: cmake_check_build_system
 visualization_msgs_generate_messages_py/fast:
 	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
 .PHONY : visualization_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named yolov8_ros_msgs_generate_messages_lisp
+
+# Build rule for target.
+yolov8_ros_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_generate_messages_lisp
+.PHONY : yolov8_ros_msgs_generate_messages_lisp
+
+# fast build rule for target.
+yolov8_ros_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_lisp.dir/build
+.PHONY : yolov8_ros_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named yolov8_ros_msgs_generate_messages_eus
+
+# Build rule for target.
+yolov8_ros_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_generate_messages_eus
+.PHONY : yolov8_ros_msgs_generate_messages_eus
+
+# fast build rule for target.
+yolov8_ros_msgs_generate_messages_eus/fast:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_eus.dir/build
+.PHONY : yolov8_ros_msgs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_eus
@@ -1208,30 +1117,17 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named trajectory_publisher_node
+# Target rules for targets named yolov8_ros_msgs_generate_messages_cpp
 
 # Build rule for target.
-trajectory_publisher_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 trajectory_publisher_node
-.PHONY : trajectory_publisher_node
+yolov8_ros_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 yolov8_ros_msgs_generate_messages_cpp
+.PHONY : yolov8_ros_msgs_generate_messages_cpp
 
 # fast build rule for target.
-trajectory_publisher_node/fast:
-	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node.dir/build
-.PHONY : trajectory_publisher_node/fast
-
-#=============================================================================
-# Target rules for targets named trajectory_tracking_node
-
-# Build rule for target.
-trajectory_tracking_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 trajectory_tracking_node
-.PHONY : trajectory_tracking_node
-
-# fast build rule for target.
-trajectory_tracking_node/fast:
-	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_tracking_node.dir/build
-.PHONY : trajectory_tracking_node/fast
+yolov8_ros_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build.make Robomaster-uav-competition/plan_and_control/CMakeFiles/yolov8_ros_msgs_generate_messages_cpp.dir/build
+.PHONY : yolov8_ros_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named rpc
@@ -1354,32 +1250,24 @@ help:
 	@echo "... _uav_msgs_generate_messages_check_deps_DesiredStates"
 	@echo "... uav_msgs_generate_messages_lisp"
 	@echo "... uav_msgs_generate_messages_nodejs"
-	@echo "... _yolov8_ros_msgs_generate_messages_check_deps_BoundingBoxes"
-	@echo "... _yolov8_ros_msgs_generate_messages_check_deps_BoundingBox"
-	@echo "... yolov8_ros_msgs_generate_messages_cpp"
-	@echo "... yolov8_ros_msgs_generate_messages"
-	@echo "... yolov8_ros_msgs_gencpp"
-	@echo "... yolov8_ros_msgs_generate_messages_eus"
-	@echo "... yolov8_ros_msgs_geneus"
-	@echo "... yolov8_ros_msgs_generate_messages_lisp"
-	@echo "... yolov8_ros_msgs_genlisp"
-	@echo "... yolov8_ros_msgs_gennodejs"
-	@echo "... yolov8_ros_msgs_generate_messages_nodejs"
+	@echo "... trajectory_replan_node"
+	@echo "... trajectory_tracking_node"
+	@echo "... trajectory_publisher_node"
 	@echo "... yolov8_ros_msgs_generate_messages_py"
-	@echo "... yolov8_ros_msgs_genpy"
+	@echo "... yolov8_ros_msgs_generate_messages_nodejs"
 	@echo "... visualization_msgs_generate_messages_cpp"
 	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... visualization_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... visualization_msgs_generate_messages_nodejs"
-	@echo "... trajectory_replan_node"
 	@echo "... visualization_msgs_generate_messages_py"
+	@echo "... yolov8_ros_msgs_generate_messages_lisp"
+	@echo "... yolov8_ros_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... trajectory_publisher_node"
-	@echo "... trajectory_tracking_node"
+	@echo "... yolov8_ros_msgs_generate_messages_cpp"
 	@echo "... rpc"
 	@echo "... AirLib"
 	@echo "... MavLinkCom"

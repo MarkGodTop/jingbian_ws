@@ -1,0 +1,436 @@
+{
+    "TaskData": {
+        "TaskInfo": {
+            "SenceId": 10,
+            "TaskName": "测试天目山项目11",
+            "TaskOverTime": 0,
+            "TaskDescription": "测试天目山项目",
+            "TaskElevation": 0,
+            "TaskMagneticVariation": 0,
+            "TaskStationFrequency": 0,
+            "TaskNavigationStationFrequency": 0,
+            "TaskAtmosphericPressure": 0,
+            "TaskTemperature": 0,
+            "TaskEndList": []
+        },
+        "EquipmentData": [
+            {
+                "EquipmentId": 1,
+                "EquipmentType": 7,
+                "EquipmentAliasName": "协和号客机_1",
+                "EquipmentName": "CRHAirplane_1",
+                "ObstacleCamp": "",
+                "EquipmentX": -76004.5439,
+                "EquipmentY": 91816.2824,
+                "EquipmentZ": -8.5921,
+                "EquipmentRX": 0,
+                "EquipmentRY": 0,
+                "EquipmentRZ": 0,
+                "HealthValue": 0,
+                "AttackValue": 0,
+                "AmmoNumber": 0,
+                "CameraList": [
+                    {
+                        "CameraName": "RGB_tms"
+                    }
+                ],
+                "SensorList": [
+                    {
+                        "SensorName": "Barometer_tms"
+                    },
+                    {
+                        "SensorName": "IMU_tms"
+                    },
+                    {
+                        "SensorName": "GPS_tms"
+                    },
+                    {
+                        "SensorName": "Magnetometer_tms"
+                    },
+                    {
+                        "SensorName": "Lidar_tms"
+                    }
+                ],
+                "PathData": [
+                    {
+                        "PointID": 1,
+                        "PointX": -76004.5439,
+                        "PointY": 91816.2824,
+                        "PointZ": 41.4079,
+                        "TaskIndicator": [
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010101",
+                                "TaskIndicatorEnd": 2
+                            },
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010101",
+                                "TaskIndicatorEnd": 2
+                            },
+                            {
+                                "TaskIndicatorName": "attitudeAccuracy_0101",
+                                "TaskIndicatorEnd": 8
+                            }
+                        ]
+                    },
+                    {
+                        "PointID": 2,
+                        "PointX": -41951.7621,
+                        "PointY": 92204.053,
+                        "PointZ": 41.4079,
+                        "TaskIndicator": [
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010102",
+                                "TaskIndicatorEnd": 3
+                            },
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010102",
+                                "TaskIndicatorEnd": 3
+                            }
+                        ]
+                    },
+                    {
+                        "PointID": 3,
+                        "PointX": 2108.3236,
+                        "PointY": 91282.8126,
+                        "PointZ": 41.4079,
+                        "TaskIndicator": [
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010103",
+                                "TaskIndicatorEnd": 4
+                            },
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010103",
+                                "TaskIndicatorEnd": 4
+                            }
+                        ]
+                    },
+                    {
+                        "PointID": 4,
+                        "PointX": 46809.6596,
+                        "PointY": 91479.8396,
+                        "PointZ": 41.4079,
+                        "TaskIndicator": [
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010104",
+                                "TaskIndicatorEnd": 5
+                            },
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010104",
+                                "TaskIndicatorEnd": 5
+                            }
+                        ]
+                    },
+                    {
+                        "PointID": 5,
+                        "PointX": 96022.0934,
+                        "PointY": 91413.9031,
+                        "PointZ": 41.4079,
+                        "TaskIndicator": [
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010105",
+                                "TaskIndicatorEnd": 6
+                            },
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010105",
+                                "TaskIndicatorEnd": 6
+                            }
+                        ]
+                    },
+                    {
+                        "PointID": 6,
+                        "PointX": 148590.026,
+                        "PointY": 91057.0065,
+                        "PointZ": 41.4079,
+                        "TaskIndicator": [
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010106",
+                                "TaskIndicatorEnd": 7
+                            },
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010106",
+                                "TaskIndicatorEnd": 7
+                            }
+                        ]
+                    },
+                    {
+                        "PointID": 7,
+                        "PointX": 201809.7057,
+                        "PointY": 91833.2676,
+                        "PointZ": 41.4079,
+                        "TaskIndicator": [
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010107",
+                                "TaskIndicatorEnd": 8
+                            },
+                            {
+                                "TaskIndicatorName": "positionMeasureFive_010107",
+                                "TaskIndicatorEnd": 8
+                            }
+                        ]
+                    },
+                    {
+                        "PointID": 8,
+                        "PointX": 266174.4052,
+                        "PointY": 91534.6121,
+                        "PointZ": 41.4079,
+                        "TaskIndicator": []
+                    }
+                ]
+            }
+        ],
+        "ObstacleData": [
+            {
+                "ObstacleID": 1,
+                "ObstacleType": 53,
+                "ObstacleName": "Screwdriver_1",
+                "ObstacleChineseName": "螺丝刀_1",
+                "ObstacleCamp": "",
+                "ObstacleX": -63448.53,
+                "ObstacleY": 87277.7685,
+                "ObstacleZ": -8.5921,
+                "ObstacleRX": 0,
+                "ObstacleRY": 0,
+                "ObstacleRZ": 0,
+                "ObstacleRatio": 50,
+                "TaskIndicator": []
+            },
+            {
+                "ObstacleID": 2,
+                "ObstacleType": 51,
+                "ObstacleName": "Gravel_1",
+                "ObstacleChineseName": "碎石_1",
+                "ObstacleCamp": "",
+                "ObstacleX": -55836.8952,
+                "ObstacleY": 86944.2493,
+                "ObstacleZ": -8.5921,
+                "ObstacleRX": 0,
+                "ObstacleRY": 0,
+                "ObstacleRZ": 0,
+                "ObstacleRatio": 50,
+                "TaskIndicator": []
+            },
+            {
+                "ObstacleID": 3,
+                "ObstacleType": 54,
+                "ObstacleName": "ObstacleSphere_1",
+                "ObstacleChineseName": "雷云干扰_1",
+                "ObstacleCamp": "",
+                "ObstacleX": 56179.8834,
+                "ObstacleY": 91058.0617,
+                "ObstacleZ": -8.5921,
+                "ObstacleRX": 0,
+                "ObstacleRY": 0,
+                "ObstacleRZ": 0,
+                "ObstacleRatio": 500,
+                "TaskIndicator": [
+                    "navigationExceptionRate_0101"
+                ]
+            },
+            {
+                "ObstacleID": 4,
+                "ObstacleType": 47,
+                "ObstacleName": "ObstacleSphere_2",
+                "ObstacleChineseName": "电磁干扰_2",
+                "ObstacleCamp": "",
+                "ObstacleX": -73887.6071,
+                "ObstacleY": 91220.8734,
+                "ObstacleZ": -8.5921,
+                "ObstacleRX": 0,
+                "ObstacleRY": 0,
+                "ObstacleRZ": 0,
+                "ObstacleRatio": 500,
+                "TaskIndicator": [
+                    "navigationExceptionRate_0101"
+                ],
+                "SphereDisturb": 1,
+                "SphereDisturbTime": 1
+            }
+        ],
+        "EquipmentIndicator": {
+            "Entirety": {
+                "EntiretyTitle": "测试天目山项目11",
+                "Indicator": [
+                    "timeConsume_sec"
+                ],
+                "EquipmentIndividual": [
+                    {
+                        "EquipmentName": "CRHAirplane_1",
+                        "Indicator": [
+                            "attitudeAccuracy_0101",
+                            "navigationExceptionRate_0101"
+                        ]
+                    }
+                ]
+            },
+            "Section": [
+                {
+                    "PhaseID": 1,
+                    "PhaseTitle": "阶段1",
+                    "GroupEquipment": [],
+                    "Indicator": [
+                        "timeConsume_sec01"
+                    ],
+                    "PhaseEquipmentIndividual": [
+                        {
+                            "EquipmentName": "CRHAirplane_1",
+                            "Indicator": [
+                                "positionMeasureFive_010101"
+                            ]
+                        }
+                    ],
+                    "Task": []
+                },
+                {
+                    "PhaseID": 2,
+                    "PhaseTitle": "阶段2",
+                    "GroupEquipment": [],
+                    "Indicator": [
+                        "timeConsume_sec02"
+                    ],
+                    "PhaseEquipmentIndividual": [
+                        {
+                            "EquipmentName": "CRHAirplane_1",
+                            "Indicator": [
+                                "positionMeasureFive_010102"
+                            ]
+                        }
+                    ],
+                    "Task": []
+                },
+                {
+                    "PhaseID": 3,
+                    "PhaseTitle": "阶段3",
+                    "GroupEquipment": [],
+                    "Indicator": [
+                        "timeConsume_sec03"
+                    ],
+                    "PhaseEquipmentIndividual": [
+                        {
+                            "EquipmentName": "CRHAirplane_1",
+                            "Indicator": [
+                                "positionMeasureFive_010103"
+                            ]
+                        }
+                    ],
+                    "Task": []
+                },
+                {
+                    "PhaseID": 4,
+                    "PhaseTitle": "阶段4",
+                    "GroupEquipment": [],
+                    "Indicator": [
+                        "timeConsume_sec04"
+                    ],
+                    "PhaseEquipmentIndividual": [
+                        {
+                            "EquipmentName": "CRHAirplane_1",
+                            "Indicator": [
+                                "positionMeasureFive_010104"
+                            ]
+                        }
+                    ],
+                    "Task": []
+                },
+                {
+                    "PhaseID": 5,
+                    "PhaseTitle": "阶段5",
+                    "GroupEquipment": [],
+                    "Indicator": [
+                        "timeConsume_sec05"
+                    ],
+                    "PhaseEquipmentIndividual": [
+                        {
+                            "EquipmentName": "CRHAirplane_1",
+                            "Indicator": [
+                                "positionMeasureFive_010105"
+                            ]
+                        }
+                    ],
+                    "Task": []
+                },
+                {
+                    "PhaseID": 6,
+                    "PhaseTitle": "阶段6",
+                    "GroupEquipment": [],
+                    "Indicator": [
+                        "timeConsume_sec06"
+                    ],
+                    "PhaseEquipmentIndividual": [
+                        {
+                            "EquipmentName": "CRHAirplane_1",
+                            "Indicator": [
+                                "positionMeasureFive_010106"
+                            ]
+                        }
+                    ],
+                    "Task": []
+                },
+                {
+                    "PhaseID": 7,
+                    "PhaseTitle": "阶段7",
+                    "GroupEquipment": [],
+                    "Indicator": [
+                        "timeConsume_sec07"
+                    ],
+                    "PhaseEquipmentIndividual": [
+                        {
+                            "EquipmentName": "CRHAirplane_1",
+                            "Indicator": [
+                                "positionMeasureFive_010107"
+                            ]
+                        }
+                    ],
+                    "Task": []
+                }
+            ]
+        },
+        "Mark": {
+            "AutoMark": {
+                "Ratio": 1,
+                "SubValue": [
+                    {
+                        "Ratio": 0.1,
+                        "SubValue": [],
+                        "MarkScale": []
+                    },
+                    {
+                        "Ratio": 0.1,
+                        "SubValue": [],
+                        "MarkScale": []
+                    },
+                    {
+                        "Ratio": 0.1,
+                        "SubValue": [],
+                        "MarkScale": []
+                    },
+                    {
+                        "Ratio": 0.1,
+                        "SubValue": [],
+                        "MarkScale": []
+                    },
+                    {
+                        "Ratio": 0.1,
+                        "SubValue": [],
+                        "MarkScale": []
+                    },
+                    {
+                        "Ratio": 0.1,
+                        "SubValue": [],
+                        "MarkScale": []
+                    },
+                    {
+                        "Ratio": 0.1,
+                        "SubValue": [],
+                        "MarkScale": []
+                    }
+                ],
+                "MarkScale": []
+            },
+            "ExpertMark": {
+                "Ratio": 0,
+                "SubValue": [],
+                "MarkScale": []
+            }
+        }
+    }
+}
