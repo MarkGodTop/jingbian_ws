@@ -56,6 +56,16 @@ Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node
  /opt/ros/noetic/include/geometry_msgs/Twist.h
  /opt/ros/noetic/include/geometry_msgs/TwistWithCovariance.h
  /opt/ros/noetic/include/geometry_msgs/Vector3.h
+ /opt/ros/noetic/include/image_transport/camera_publisher.h
+ /opt/ros/noetic/include/image_transport/camera_subscriber.h
+ /opt/ros/noetic/include/image_transport/exception.h
+ /opt/ros/noetic/include/image_transport/exports.h
+ /opt/ros/noetic/include/image_transport/image_transport.h
+ /opt/ros/noetic/include/image_transport/loader_fwds.h
+ /opt/ros/noetic/include/image_transport/publisher.h
+ /opt/ros/noetic/include/image_transport/single_subscriber_publisher.h
+ /opt/ros/noetic/include/image_transport/subscriber.h
+ /opt/ros/noetic/include/image_transport/transport_hints.h
  /opt/ros/noetic/include/nav_msgs/Odometry.h
  /opt/ros/noetic/include/ros/advertise_options.h
  /opt/ros/noetic/include/ros/advertise_service_options.h
@@ -113,10 +123,12 @@ Robomaster-uav-competition/plan_and_control/CMakeFiles/trajectory_publisher_node
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
+ /opt/ros/noetic/include/sensor_msgs/CameraInfo.h
  /opt/ros/noetic/include/sensor_msgs/CompressedImage.h
  /opt/ros/noetic/include/sensor_msgs/Image.h
  /opt/ros/noetic/include/sensor_msgs/NavSatFix.h
  /opt/ros/noetic/include/sensor_msgs/NavSatStatus.h
+ /opt/ros/noetic/include/sensor_msgs/RegionOfInterest.h
  /opt/ros/noetic/include/sensor_msgs/image_encodings.h
  /opt/ros/noetic/include/std_msgs/ColorRGBA.h
  /opt/ros/noetic/include/std_msgs/Header.h

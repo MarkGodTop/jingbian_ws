@@ -1,0 +1,545 @@
+{
+    "TaskData": {
+        "TaskInfo": {
+            "SenceId": 7,
+            "TaskName": "靖边整体测试",
+            "TaskOverTime": 0,
+            "TaskDescription": "11111111111",
+            "TaskElevation": 0,
+            "TaskMagneticVariation": 0,
+            "TaskStationFrequency": 0,
+            "TaskNavigationStationFrequency": 0,
+            "TaskAtmosphericPressure": 0,
+            "TaskTemperature": 0,
+            "TaskEndList": []
+        },
+        "EquipmentData": [
+            {
+                "EquipmentId": 1,
+                "EquipmentType": 1,
+                "EquipmentAliasName": "四旋翼无人机_1",
+                "EquipmentName": "UnmannedAirplane_1",
+                "ObstacleCamp": "",
+                "EquipmentX": -76132.4497,
+                "EquipmentY": 91259.1928,
+                "EquipmentZ": -0.0024,
+                "EquipmentRX": 0,
+                "EquipmentRY": 0,
+                "EquipmentRZ": 0,
+                "CameraList": [
+                    {
+                        "CameraName": "Intel®RealSense™_Depth_Camera_D455_RGB",
+                        "is_px4": "0"
+                    },
+                    {
+                        "CameraName": "Intel®RealSense™_Depth_Camera_D455_Depth",
+                        "is_px4": "0"
+                    }
+                ],
+                "SensorList": [
+                    {
+                        "SensorName": "HESAI_Pandar_64",
+                        "is_px4": "0"
+                    },
+                    {
+                        "SensorName": "IMU_ALUBI_LPMS_IG1_RS232",
+                        "is_px4": "0"
+                    }
+                ],
+                "PathData": [
+                    {
+                        "PointID": 1,
+                        "PointX": -76132.4497,
+                        "PointY": 91244.3975,
+                        "PointZ": 0,
+                        "TaskIndicator": [
+                            {
+                                "TaskIndicatorId": 8,
+                                "TaskIndicatorName": "positionMeasureFive_0101",
+                                "TaskIndicatorEnd": 4
+                            },
+                            {
+                                "TaskIndicatorId": 10,
+                                "TaskIndicatorName": "attitudeAccuracy_0102",
+                                "TaskIndicatorEnd": 4
+                            },
+                            {
+                                "TaskIndicatorId": 12,
+                                "TaskIndicatorName": "staticRangingAccuracy_0101",
+                                "TaskIndicatorEnd": 4
+                            },
+                            {
+                                "TaskIndicatorId": 13,
+                                "TaskIndicatorName": "dynamicRangingAccuracy_0102",
+                                "TaskIndicatorEnd": 4
+                            },
+                            {
+                                "TaskIndicatorId": 28,
+                                "TaskIndicatorName": "APTargetAccuracy_0103",
+                                "TaskIndicatorEnd": 4
+                            },
+                            {
+                                "TaskIndicatorId": 29,
+                                "TaskIndicatorName": "MAPTargetAccuracy_0104",
+                                "TaskIndicatorEnd": 4
+                            },
+                            {
+                                "TaskIndicatorId": 30,
+                                "TaskIndicatorName": "iouTargetAccuracy_0105",
+                                "TaskIndicatorEnd": 4
+                            },
+                            {
+                                "TaskIndicatorId": 31,
+                                "TaskIndicatorName": "MiouTargetAccuracy_0106",
+                                "TaskIndicatorEnd": 4
+                            },
+                            {
+                                "TaskIndicatorId": 32,
+                                "TaskIndicatorName": "FWiouTargetAccuracy_0107",
+                                "TaskIndicatorEnd": 4
+                            },
+                            {
+                                "TaskIndicatorId": 15,
+                                "TaskIndicatorName": "targetAccuracy_010101",
+                                "TaskIndicatorEnd": 2
+                            }
+                        ]
+                    },
+                    {
+                        "PointID": 2,
+                        "PointX": -74772.9659,
+                        "PointY": 91244.3975,
+                        "PointZ": 500,
+                        "TaskIndicator": [
+                            {
+                                "TaskIndicatorId": 15,
+                                "TaskIndicatorName": "targetAccuracy_010102",
+                                "TaskIndicatorEnd": 3
+                            }
+                        ]
+                    },
+                    {
+                        "PointID": 3,
+                        "PointX": -73209.3393,
+                        "PointY": 91244.3975,
+                        "PointZ": 500,
+                        "TaskIndicator": [
+                            {
+                                "TaskIndicatorId": 15,
+                                "TaskIndicatorName": "targetAccuracy_010103",
+                                "TaskIndicatorEnd": 4
+                            }
+                        ]
+                    },
+                    {
+                        "PointID": 4,
+                        "PointX": -71535.6298,
+                        "PointY": 91244.3975,
+                        "PointZ": 500,
+                        "TaskIndicator": []
+                    }
+                ],
+                "EquipmentMass": 1200,
+                "Energy": 0
+            }
+        ],
+        "ObstacleData": [
+            {
+                "ObstacleID": 1,
+                "ObstacleType": 8,
+                "ObstacleName": "OilDrums_1",
+                "ObstacleChineseName": "油桶_1",
+                "ObstacleCamp": "",
+                "ObstacleX": -75507.3356,
+                "ObstacleY": 91226.6418,
+                "ObstacleZ": -0.0024,
+                "ObstacleRX": 0,
+                "ObstacleRY": 0,
+                "ObstacleRZ": 0,
+                "ObstacleRatio": 1,
+                "PathData": [],
+                "TaskIndicator": [
+                    "staticRangingAccuracy_0101",
+                    "dynamicRangingAccuracy_0102",
+                    "APTargetAccuracy_0103",
+                    "MAPTargetAccuracy_0104",
+                    "iouTargetAccuracy_0105",
+                    "MiouTargetAccuracy_0106",
+                    "FWiouTargetAccuracy_0107",
+                    "targetAccuracy_010101",
+                    "targetAccuracy_010102",
+                    "targetAccuracy_010103"
+                ],
+                "ObstacleSpeed": 0
+            },
+            {
+                "ObstacleID": 2,
+                "ObstacleType": 8,
+                "ObstacleName": "OilDrums_2",
+                "ObstacleChineseName": "油桶_2",
+                "ObstacleCamp": "",
+                "ObstacleX": -73991.3207,
+                "ObstacleY": 91189.9292,
+                "ObstacleZ": -0.0024,
+                "ObstacleRX": 0,
+                "ObstacleRY": 0,
+                "ObstacleRZ": 0,
+                "ObstacleRatio": 1,
+                "PathData": [],
+                "TaskIndicator": [
+                    "staticRangingAccuracy_0101",
+                    "dynamicRangingAccuracy_0102",
+                    "APTargetAccuracy_0103",
+                    "MAPTargetAccuracy_0104",
+                    "iouTargetAccuracy_0105",
+                    "MiouTargetAccuracy_0106",
+                    "FWiouTargetAccuracy_0107",
+                    "targetAccuracy_010101",
+                    "targetAccuracy_010102",
+                    "targetAccuracy_010103"
+                ],
+                "ObstacleSpeed": 0
+            },
+            {
+                "ObstacleID": 3,
+                "ObstacleType": 8,
+                "ObstacleName": "OilDrums_3",
+                "ObstacleChineseName": "油桶_3",
+                "ObstacleCamp": "",
+                "ObstacleX": -72284.3883,
+                "ObstacleY": 91079.7824,
+                "ObstacleZ": -0.0024,
+                "ObstacleRX": 0,
+                "ObstacleRY": 0,
+                "ObstacleRZ": 0,
+                "ObstacleRatio": 1,
+                "PathData": [],
+                "TaskIndicator": [
+                    "staticRangingAccuracy_0101",
+                    "dynamicRangingAccuracy_0102",
+                    "APTargetAccuracy_0103",
+                    "MAPTargetAccuracy_0104",
+                    "iouTargetAccuracy_0105",
+                    "MiouTargetAccuracy_0106",
+                    "FWiouTargetAccuracy_0107",
+                    "targetAccuracy_010101",
+                    "targetAccuracy_010102",
+                    "targetAccuracy_010103"
+                ],
+                "ObstacleSpeed": 0
+            },
+            {
+                "ObstacleID": 4,
+                "ObstacleType": 8,
+                "ObstacleName": "OilDrums_4",
+                "ObstacleChineseName": "油桶_4",
+                "ObstacleCamp": "",
+                "ObstacleX": -72316.0166,
+                "ObstacleY": 91220.5539,
+                "ObstacleZ": -0.0024,
+                "ObstacleRX": 0,
+                "ObstacleRY": 0,
+                "ObstacleRZ": 0,
+                "ObstacleRatio": 1,
+                "PathData": [],
+                "TaskIndicator": [
+                    "staticRangingAccuracy_0101",
+                    "dynamicRangingAccuracy_0102",
+                    "APTargetAccuracy_0103",
+                    "MAPTargetAccuracy_0104",
+                    "iouTargetAccuracy_0105",
+                    "MiouTargetAccuracy_0106",
+                    "FWiouTargetAccuracy_0107",
+                    "targetAccuracy_010101",
+                    "targetAccuracy_010102",
+                    "targetAccuracy_010103"
+                ],
+                "ObstacleSpeed": 0
+            }
+        ],
+        "EquipmentIndicator": {
+            "Entirety": {
+                "EntiretyTitle": "靖边整体测试",
+                "Indicator": [
+                    "timeConsume_sec",
+                    "targetAccuracy_sec"
+                ],
+                "EquipmentIndividual": [
+                    {
+                        "EquipmentName": "UnmannedAirplane_1",
+                        "Indicator": [
+                            "positionMeasureFive_0101",
+                            "attitudeAccuracy_0102",
+                            "staticRangingAccuracy_0101",
+                            "dynamicRangingAccuracy_0102",
+                            "APTargetAccuracy_0103",
+                            "MAPTargetAccuracy_0104",
+                            "iouTargetAccuracy_0105",
+                            "MiouTargetAccuracy_0106",
+                            "FWiouTargetAccuracy_0107",
+                            "averageMotorThrottle_0101",
+                            "speedCondition_0102",
+                            "heightCondition_0103",
+                            "acceleratedSpeed_0104",
+                            "attitudeAngle_0105"
+                        ]
+                    }
+                ]
+            },
+            "Section": [
+                {
+                    "PhaseID": 1,
+                    "PhaseTitle": "阶段",
+                    "GroupEquipment": [],
+                    "Indicator": [
+                        "timeConsume_sec01",
+                        "targetAccuracy_sec01"
+                    ],
+                    "PhaseEquipmentIndividual": [
+                        {
+                            "EquipmentName": "UnmannedAirplane_1",
+                            "Indicator": [
+                                "targetAccuracy_010101"
+                            ]
+                        }
+                    ],
+                    "Task": []
+                },
+                {
+                    "PhaseID": 2,
+                    "PhaseTitle": "阶段",
+                    "GroupEquipment": [],
+                    "Indicator": [
+                        "timeConsume_sec02",
+                        "targetAccuracy_sec02"
+                    ],
+                    "PhaseEquipmentIndividual": [
+                        {
+                            "EquipmentName": "UnmannedAirplane_1",
+                            "Indicator": [
+                                "targetAccuracy_010102"
+                            ]
+                        }
+                    ],
+                    "Task": []
+                },
+                {
+                    "PhaseID": 3,
+                    "PhaseTitle": "阶段",
+                    "GroupEquipment": [],
+                    "Indicator": [
+                        "timeConsume_sec03",
+                        "targetAccuracy_sec03"
+                    ],
+                    "PhaseEquipmentIndividual": [
+                        {
+                            "EquipmentName": "UnmannedAirplane_1",
+                            "Indicator": [
+                                "targetAccuracy_010103"
+                            ]
+                        }
+                    ],
+                    "Task": []
+                }
+            ]
+        },
+        "Mark": {
+            "AutoMark": {
+                "Ratio": 0.5,
+                "title": "靖边整体测试",
+                "SubValue": [
+                    {
+                        "Ratio": 0.2,
+                        "SubValue": [],
+                        "title": "阶段",
+                        "MarkScale": [
+                            {
+                                "Ratio": 0.5,
+                                "Standard": [
+                                    {
+                                        "scale": [
+                                            0,
+                                            100
+                                        ],
+                                        "score": 100
+                                    },
+                                    {
+                                        "scale": [
+                                            100,
+                                            "+∞"
+                                        ],
+                                        "score": 50
+                                    }
+                                ],
+                                "Indicator": "timeConsume_sec01"
+                            },
+                            {
+                                "Ratio": 0.5,
+                                "Standard": [
+                                    {
+                                        "scale": [
+                                            0,
+                                            50
+                                        ],
+                                        "score": 50
+                                    },
+                                    {
+                                        "scale": [
+                                            50,
+                                            100
+                                        ],
+                                        "score": 100
+                                    }
+                                ],
+                                "Indicator": "targetAccuracy_sec01"
+                            }
+                        ]
+                    },
+                    {
+                        "Ratio": 0.6,
+                        "SubValue": [],
+                        "title": "阶段",
+                        "MarkScale": [
+                            {
+                                "Ratio": 0.5,
+                                "Standard": [
+                                    {
+                                        "scale": [
+                                            0,
+                                            100
+                                        ],
+                                        "score": 100
+                                    },
+                                    {
+                                        "scale": [
+                                            100,
+                                            "+∞"
+                                        ],
+                                        "score": 50
+                                    }
+                                ],
+                                "Indicator": "timeConsume_sec02"
+                            },
+                            {
+                                "Ratio": 0.5,
+                                "Standard": [
+                                    {
+                                        "scale": [
+                                            0,
+                                            50
+                                        ],
+                                        "score": 50
+                                    },
+                                    {
+                                        "scale": [
+                                            50,
+                                            100
+                                        ],
+                                        "score": 100
+                                    }
+                                ],
+                                "Indicator": "targetAccuracy_sec02"
+                            }
+                        ]
+                    },
+                    {
+                        "Ratio": 0.2,
+                        "SubValue": [],
+                        "title": "阶段",
+                        "MarkScale": [
+                            {
+                                "Ratio": 0.5,
+                                "Standard": [
+                                    {
+                                        "scale": [
+                                            0,
+                                            100
+                                        ],
+                                        "score": 100
+                                    },
+                                    {
+                                        "scale": [
+                                            100,
+                                            "+∞"
+                                        ],
+                                        "score": 50
+                                    }
+                                ],
+                                "Indicator": "timeConsume_sec03"
+                            },
+                            {
+                                "Ratio": 0.5,
+                                "Standard": [
+                                    {
+                                        "scale": [
+                                            0,
+                                            50
+                                        ],
+                                        "score": 50
+                                    },
+                                    {
+                                        "scale": [
+                                            50,
+                                            100
+                                        ],
+                                        "score": 100
+                                    }
+                                ],
+                                "Indicator": "targetAccuracy_sec03"
+                            }
+                        ]
+                    }
+                ],
+                "MarkScale": []
+            },
+            "ExpertMark": {
+                "Ratio": 0.5,
+                "title": "靖边整体测试",
+                "SubValue": [
+                    {
+                        "Ratio": 0.2,
+                        "title": "阶段",
+                        "SubValue": [],
+                        "MarkScale": [
+                            {
+                                "Ratio": 1,
+                                "Indicator": "timeConsume_sec01",
+                                "score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "Ratio": 0.6,
+                        "title": "阶段",
+                        "SubValue": [],
+                        "MarkScale": [
+                            {
+                                "Ratio": 1,
+                                "Indicator": "timeConsume_sec02",
+                                "score": 0
+                            }
+                        ]
+                    },
+                    {
+                        "Ratio": 0.2,
+                        "title": "阶段",
+                        "SubValue": [],
+                        "MarkScale": [
+                            {
+                                "Ratio": 0.5,
+                                "Indicator": "targetAccuracy_sec03",
+                                "score": 0
+                            },
+                            {
+                                "Ratio": 0.5,
+                                "Indicator": "timeConsume_sec03",
+                                "score": 0
+                            }
+                        ]
+                    }
+                ],
+                "MarkScale": []
+            }
+        }
+    }
+}

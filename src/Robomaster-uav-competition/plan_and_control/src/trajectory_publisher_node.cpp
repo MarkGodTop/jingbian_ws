@@ -6,7 +6,7 @@ TrajectoryPublisherNode::TrajectoryPublisherNode(const ros::NodeHandle &nh, cons
     Json::Value root;
     Json::CharReaderBuilder builder;
     nh_private_.getParam("json_cpp", json_cpp);
-    std::ifstream i("/home/ros20/jingbian_ws/file (24).json", std::ifstream::binary);
+    std::ifstream i("/home/ros20/jingbian_ws/269.json", std::ifstream::binary);
     std::string errs;
     if (!Json::parseFromStream(builder, i, &root, &errs)) { 
         std::cerr << "Error opening or parsing JSON file: " << errs << std::endl;
@@ -69,64 +69,100 @@ TrajectoryPublisherNode::TrajectoryPublisherNode(const ros::NodeHandle &nh, cons
         }
         std::cout << std::endl;
     }
-
+    it_ = std::make_unique<image_transport::ImageTransport>(nh_);
+    depth_image_sub_ = it_->subscribe("/airsim_node/UnmannedAirplane_1/D455_Depth_01/DepthPerspective", 10,
+                        std::bind(&TrajectoryPublisherNode::depthImageCallback, this,  std::placeholders::_1));
     odom_sub_ =
-        nh_.subscribe<nav_msgs::Odometry>("/airsim_node/CRHAirplane_1/odom_local_ned",1, &TrajectoryPublisherNode::odomCallback,this);
-    // yolo_sub_ = 
-    //     nh_.subscribe<yolov8_ros_msgs::BoundingBoxes>("/yolov8/BoundingBoxes",10, &TrajectoryPublisherNode::boundingBoxes,this);
-    gps_sub_ =
-        nh_.subscribe<sensor_msgs::NavSatFix>("/airsim_node/CRHAirplane_1/gps/GPS_tms_3",1, &TrajectoryPublisherNode::gpsCallback,this);
+        nh_.subscribe<nav_msgs::Odometry>("/airsim_node/UnmannedAirplane_1/odom_local_ned",1, &TrajectoryPublisherNode::odomCallback,this);
+    yolo_sub_ = 
+        nh_.subscribe<yolov8_ros_msgs::BoundingBoxes>("/yolov8/BoundingBoxes",10, &TrajectoryPublisherNode::boundingBoxes,this);
+    // gps_sub_ =
+    //     nh_.subscribe<sensor_msgs::NavSatFix>("/airsim_node/UnmannedAirplane_1/gps/GPS_tms_3",1, &TrajectoryPublisherNode::gpsCallback,this);
+    
+}
+void TrajectoryPublisherNode::depthImageCallback(const sensor_msgs::ImageConstPtr& msg) {
+    if(yolo_ == nullptr){
+        return;
+    }
+    for (std::size_t i = 0; i < yolo_->bounding_boxes.size(); ++i){
+        float x_center_rgb = (yolo_->bounding_boxes[i].xmin + yolo_->bounding_boxes[i].xmax) / 2.0f;
+        float y_center_rgb = (yolo_->bounding_boxes[i].ymin + yolo_->bounding_boxes[i].ymax) / 2.0f * 0.9;
+        depth_ptr_ = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::TYPE_32FC1);
+        Mat depth = depth_ptr_->image;
+        int y = y_center_rgb;
+        int x = x_center_rgb;
+        float depth_value = depth.ptr<float>(y)[x];
+        Eigen::Vector3d pixel_and_depth(x_center_rgb, y_center_rgb, depth_value);
+        // std::cout << "pixel_and_depth:" << pixel_and_depth << std::endl;
+        Eigen::Vector3d point_w = transformPixel2World(pixel_and_depth);
+        int type_class = 8;
+        values.x = point_w.x();
+        values.y = point_w.y();
+        values.z = point_w.z();
+        Eigen::Vector3d point_m(odom_->pose.pose.position.x,odom_->pose.pose.position.y,odom_->pose.pose.position.z);
+        double d = (point_w - point_m).norm();
+        values.d = d;
+        values.class_val = type_class;
+        cc = 1;
+    }
     
 }
 
-
 TrajectoryPublisherNode::~TrajectoryPublisherNode() {}
 
+void TrajectoryPublisherNode::boundingBoxes(const yolov8_ros_msgs::BoundingBoxesConstPtr &msg){
+    if (!msg) {
+        std::cerr << "BoundingBoxes message is null!" << std::endl;
+        return;
+    }
+    yolo_ = msg;
+    if(odom_pos_(2) <= -0.2 && stamp3 != yolo_->header.stamp){
+        stamp3 = yolo_->header.stamp;
+        Value data(Json::arrayValue);
+        std::string type_class;
+        for (const auto& box : yolo_->bounding_boxes) {
+            Value obj;
+            if(box.Class == "class_1"){
+                type_class = "1";
+            }  
+            else if(box.Class == "class_0"){
+                type_class = "8";
+            }
+            else{
+                return;
+            }
+            obj["ObjType"] = type_class;
+            obj["ULPointX"] = static_cast<double>(box.xmin); // xmin
+            obj["ULPointY"] = static_cast<double>(box.ymin); // ymin
+            obj["DRPointX"] = static_cast<double>(box.xmax); // xmax
+            obj["DRPointY"] = static_cast<double>(box.ymax); // ymax                if(box.xmin)
+            {
+                std::cout << "obj contains: " << obj.toStyledString() << std::endl;
+            }
+            // 将边界框添加到数据数组中
+            data.append(obj);
+        }
+        Value root;
+        uint64_t ms = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+        root["timestamp"] = Json::Value(static_cast<Int64>(ms)); // 将uint64_t转换为Json::Value::UInt64类型 // 将时间戳转换为纳秒
+        root["resX"] = resX;
+        root["resY"] = resY;
+        root["cameraName"] = cameraName;
+        root["data"] = data;
+        // 使用jsoncpp的StreamWriter来格式化JSON
+        StreamWriterBuilder builder;
+        builder["indentation"] = "\t"; // 使用制表符缩进
+        const std::string json_str = Json::writeString(builder, root);
+        if(data.empty()){
+            return;
+        }
+        client.simUpdateLocalDetectTargetNumData(vehicle, json_str, waypoint_flag_data);
 
-// void TrajectoryPublisherNode::boundingBoxes(const yolov8_ros_msgs::BoundingBoxesConstPtr &msg){
-//     if (!msg) {
-//         std::cerr << "BoundingBoxes message is null!" << std::endl;
-//         return;
-//     }
-//     yolo_ = msg;
-//     if(odom_pos_(2) <= -0.2 && stamp3 != yolo_->header.stamp){
-//         stamp3 = yolo_->header.stamp;
-//         Value data(Json::arrayValue);
-//         std::string type_class;
-//         for (const auto& box : yolo_->bounding_boxes) {
-//             Value obj;
-//             if(box.Class.empty())
-//             type_class = "0";
-//             if(box.Class == "class_1")
-//                 type_class = "1";
-//             if(box.Class == "class_0")
-//                 type_class = "8";
-//             obj["ObjType"] = type_class;
-//             obj["ULPointX"] = static_cast<double>(box.xmin); // xmin
-//             obj["ULPointY"] = static_cast<double>(box.ymin); // ymin
-//             obj["DRPointX"] = static_cast<double>(box.xmax); // xmax
-//             obj["DRPointY"] = static_cast<double>(box.ymax); // ymax                if(box.xmin)
-//             {
-//                 std::cout << "obj contains: " << obj.toStyledString() << std::endl;
-//             }
-//             // 将边界框添加到数据数组中
-//             data.append(obj);
-//         }
-//         Value root;
-//         uint64_t ms = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
-//         root["timestamp"] = Json::Value(static_cast<Int64>(ms)); // 将uint64_t转换为Json::Value::UInt64类型 // 将时间戳转换为纳秒
-//         root["resX"] = resX;
-//         root["resY"] = resY;
-//         root["cameraName"] = cameraName;
-//         root["data"] = data;
-//         // 使用jsoncpp的StreamWriter来格式化JSON
-//         StreamWriterBuilder builder;
-//         builder["indentation"] = "\t"; // 使用制表符缩进
-//         const std::string json_str = Json::writeString(builder, root);
-//         client.simUpdateLocalDetectTargetNumData(vehicle, json_str);
-//         // std::this_thread::sleep_for(std::chrono::milliseconds(11));  
-//     }
-// }
+        // std::this_thread::sleep_for(std::chrono::milliseconds(11));  
+    }
+    client.simUpdateLocalDetectTargetPreData(vehicle, 6.25, -0.33, 0.0999, 8, waypoint_flag_data);
+    client.simUpdateLocalTargetDistanceData(vehicle, values.d, values.x, values.y, values.z, 8, true, waypoint_flag_data);
+}
 
 void TrajectoryPublisherNode::odomCallback(const nav_msgs::OdometryConstPtr &msg) {
     odom_ = msg;
@@ -146,6 +182,7 @@ void TrajectoryPublisherNode::odomCallback(const nav_msgs::OdometryConstPtr &msg
         stamp1 = odom_->header.stamp;
         uint64_t ms = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();    
         client.simUpdateLocalPositionData(vehicle, odom_pos_(0), odom_pos_(1), odom_pos_(2), ms, 8, waypoint_flag_data);
+        client.simUpdateLocalRotationData(vehicle, 1, 2, 3,4, ms, waypoint_flag_data);
         // cout << odom_pos_(0) << ", " << odom_pos_(1) << ", " << odom_pos_(2) << ", " << endl;
     }
     if(odom_ == nullptr)
