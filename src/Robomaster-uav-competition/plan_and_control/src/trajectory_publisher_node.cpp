@@ -123,7 +123,7 @@ void TrajectoryPublisherNode::boundingBoxes(const yolov8_ros_msgs::BoundingBoxes
         for (const auto& box : yolo_->bounding_boxes) {
             Value obj;
             if(box.Class == "class_1"){
-                type_class = "1";
+                type_class = "8";
             }  
             else if(box.Class == "class_0"){
                 type_class = "8";
